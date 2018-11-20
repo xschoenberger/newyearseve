@@ -329,6 +329,9 @@ canvas:active {
             max-width: 300px;
             padding-top: 66px;
             position: relative;
+            &--submit {
+                padding-top: 45px;
+            }
             label {
                 position: absolute;
                 left: 12px;
@@ -375,6 +378,14 @@ canvas:active {
                 border: none;
                 border-radius: none;
                 font-family: "Poppins";
+                padding:8px;
+                text-transform: uppercase;
+                background-color: transparent;
+                border:2px white solid;
+                cursor: pointer;
+                width:100px;
+                color:white;
+                margin-bottom: 35px;
             }
         }
     }

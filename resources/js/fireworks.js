@@ -30,12 +30,40 @@ document.querySelector(".show-invite").addEventListener("click", e => {
     document.querySelector(".invitation--head").classList.toggle("hide")
     document.querySelector(".invitation--body").classList.toggle("active")
     e.target.classList.toggle("active")
-    if(e.target.innerHTML.indexOf("hide") !== -1) {
+    if (e.target.innerHTML.indexOf("hide") !== -1) {
         e.target.innerHTML = "show details"
     } else {
         e.target.innerHTML = "hide details"
     }
 })
+///////////// HOVER ANIMATION /////////////
+const cards = document.querySelector(".invitation--head");
+const images = document.querySelectorAll(".svgee");
+const range = 40;
+// const calcValue = (a, b) => (((a * 100) / b) * (range / 100) -(range / 2)).toFixed(1);
+const calcValue = (a, b) => (a / b * range - range / 2).toFixed(1) // thanks @alice-mx
+let timeout;
+document.addEventListener('mousemove', ({
+    x,
+    y
+}) => {
+    if (timeout) {
+        window.cancelAnimationFrame(timeout);
+    }
+    timeout = window.requestAnimationFrame(() => {
+        const yValue = calcValue(y, window.innerHeight);
+        const xValue = calcValue(x, window.innerWidth);
+        cards.style.transform = `rotateX(${xValue*0.6}deg) rotateY(${yValue*0.6}deg) translate(${xValue*0.5}px, ${yValue*0.5}px)`;
+        [].forEach.call(images, (image) => {
+            image.style.marginTop = `${-xValue}px`;
+            image.style.marginLeft = `${yValue}px`;
+        });
+        // [].forEach.call(backgrounds, (background) => {
+        //     background.style.backgroundPosition = `${xValue*.45}px ${-yValue*.45}px`;
+        // })
+    })
+}, false);
+///////////// HOVER ANIMATION /////////////
 var Fireworks = function() {
     /*=============================================================================*/
     /* Utility

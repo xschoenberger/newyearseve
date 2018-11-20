@@ -47464,6 +47464,36 @@ document.querySelector(".show-invite").addEventListener("click", function (e) {
         e.target.innerHTML = "hide details";
     }
 });
+///////////// HOVER ANIMATION /////////////
+var cards = document.querySelector(".invitation--head");
+var images = document.querySelectorAll(".svgee");
+var range = 40;
+// const calcValue = (a, b) => (((a * 100) / b) * (range / 100) -(range / 2)).toFixed(1);
+var calcValue = function calcValue(a, b) {
+    return (a / b * range - range / 2).toFixed(1);
+}; // thanks @alice-mx
+var timeout = void 0;
+document.addEventListener('mousemove', function (_ref) {
+    var x = _ref.x,
+        y = _ref.y;
+
+    if (timeout) {
+        window.cancelAnimationFrame(timeout);
+    }
+    timeout = window.requestAnimationFrame(function () {
+        var yValue = calcValue(y, window.innerHeight);
+        var xValue = calcValue(x, window.innerWidth);
+        cards.style.transform = "rotateX(" + xValue * 0.6 + "deg) rotateY(" + yValue * 0.6 + "deg) translate(" + xValue * 0.5 + "px, " + yValue * 0.5 + "px)";
+        [].forEach.call(images, function (image) {
+            image.style.marginTop = -xValue + "px";
+            image.style.marginLeft = yValue + "px";
+        });
+        // [].forEach.call(backgrounds, (background) => {
+        //     background.style.backgroundPosition = `${xValue*.45}px ${-yValue*.45}px`;
+        // })
+    });
+}, false);
+///////////// HOVER ANIMATION /////////////
 var Fireworks = function Fireworks() {
     /*=============================================================================*/
     /* Utility
