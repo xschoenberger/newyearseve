@@ -1,0 +1,511 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);@import url(https://fonts.googleapis.com/css?family=Playfair+Display);html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+}
+
+body {
+  background: #171717;
+  color: #999;
+  font: 100%/18px helvetica, arial, sans-serif;
+  font-family: "Poppins";
+}
+
+h2.tap {
+  z-index: -1;
+  pointer-events: none;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1.4;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 20px;
+  -webkit-transition: opacity .88s ease;
+  transition: opacity .88s ease;
+}
+
+h2.tap span {
+  -webkit-transition: opacity .88s ease;
+  transition: opacity .88s ease;
+  opacity: 0;
+}
+
+h2.tap span:nth-child(2) {
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+}
+
+h2.tap.in {
+  opacity: 1;
+}
+
+h2.tap.in span {
+  opacity: 1;
+}
+
+h2.tap.out {
+  opacity: 0;
+}
+
+h2.tap.out span {
+  opacity: 0;
+}
+
+h2.tap i {
+  letter-spacing: 10px;
+  font-style: normal;
+  font-size: 1.4rem;
+  display: inline-block;
+  position: relative;
+}
+
+.svgee {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  max-width: 200px;
+  opacity: 0;
+  -webkit-transform: translate(0px, 30px);
+          transform: translate(0px, 30px);
+  -webkit-animation: float 6s ease-in-out infinite;
+          animation: float 6s ease-in-out infinite;
+}
+
+.svgee img {
+  width: 100%;
+}
+
+.svgee.ascension {
+  left: 30px;
+  top: 50px;
+  max-width: 166px;
+}
+
+.svgee.ayo {
+  left: 160px;
+  top: 60%;
+}
+
+.svgee.face {
+  right: 150px;
+  bottom: 0%;
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
+}
+
+.svgee.pythagoras {
+  right: 40px;
+  top: 40px;
+  max-width: 300px;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.svgee.champagne {
+  max-width: 50px;
+  left: 50%;
+  bottom: 70px;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.svgee.fireworks {
+  max-width: 40px;
+  right: 200px;
+  top: 50%;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@-webkit-keyframes floatX {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+
+  50% {
+    -webkit-transform: translate(4px, -20px);
+            transform: translate(4px, -20px);
+  }
+
+  100% {
+    -webkit-transform: translate(-4px, 0px);
+            transform: translate(-4px, 0px);
+  }
+}
+
+@keyframes floatX {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+
+  50% {
+    -webkit-transform: translate(4px, -20px);
+            transform: translate(4px, -20px);
+  }
+
+  100% {
+    -webkit-transform: translate(-4px, 0px);
+            transform: translate(-4px, 0px);
+  }
+}
+
+@media (max-width: 1295px) {
+  .svgee.ayo {
+    left: 100px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .svgee.pythagoras {
+    right: 20px;
+    max-width: 240px;
+  }
+
+  .svgee.ayo {
+    top: 70%;
+  }
+
+  .svgee.fireworks {
+    right: 140px;
+    top: 40%;
+  }
+}
+
+@media (max-width: 950px) {
+  .svgee.ascension {
+    max-width: 100px;
+  }
+
+  .svgee.ayo {
+    max-width: 120px;
+    left: 0;
+  }
+
+  .svgee.pythagoras {
+    top: 80px;
+    max-width: 190px;
+  }
+
+  .svgee.face {
+    max-width: 100px;
+  }
+}
+
+.show-invite {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 49%;
+  color: white;
+  letter-spacing: 8px;
+  z-index: 4;
+  position: absolute;
+  opacity: 0;
+  text-transform: uppercase;
+}
+
+.show-invite.active {
+  top: 10%;
+}
+
+#canvas-container {
+  background-image: url(/imgs/bg_blur.jpg);
+  position: absolute;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  z-index: 2;
+}
+
+#canvas-container .invitation {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 95%;
+  min-width: 50%;
+  max-width: 500px;
+  color: white;
+  z-index: 1;
+}
+
+@media (max-width: 1070px) {
+  #canvas-container .invitation {
+    min-width: 70%;
+  }
+}
+
+#canvas-container .invitation .bg {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: top .3s ease;
+  transition: top .3s ease;
+}
+
+#canvas-container .invitation--head {
+  opacity: 0;
+  text-align: center;
+  margin-top: 3em;
+  top: 35%;
+  position: relative;
+  -webkit-transition: opacity .4s ease;
+  transition: opacity .4s ease;
+}
+
+#canvas-container .invitation--head.hide {
+  opacity: 0 !important;
+}
+
+#canvas-container .invitation--head h2 {
+  font-size: 5rem;
+  margin: 0;
+  font-family: "Playfair Display";
+  font-weight: 300;
+}
+
+#canvas-container .invitation--head h3 {
+  margin: 0;
+  margin-top: 2em;
+  position: relative;
+}
+
+#canvas-container .invitation--head a {
+  text-transform: uppercase;
+  top: 70px;
+  position: relative;
+  letter-spacing: 10px;
+}
+
+#canvas-container .invitation--body {
+  opacity: 0;
+  padding: 50px 38px 20px 38px;
+  -webkit-transition: opacity .4s ease;
+  transition: opacity .4s ease;
+}
+
+#canvas-container .invitation--body.active {
+  opacity: 1;
+}
+
+#canvas-container .invitation--body h2,
+#canvas-container .invitation--body h3,
+#canvas-container .invitation--body h4,
+#canvas-container .invitation--body h5,
+#canvas-container .invitation--body h6 {
+  font-family: "Playfair Display";
+  font-weight: 300;
+  font-size: 2.25rem;
+  margin-top: 1.5em;
+  position: relative;
+}
+
+#canvas-container .invitation--body h2:before,
+#canvas-container .invitation--body h3:before,
+#canvas-container .invitation--body h4:before,
+#canvas-container .invitation--body h5:before,
+#canvas-container .invitation--body h6:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -30px;
+  top: 1ch;
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+}
+
+#canvas-container .invitation--body h3 .sm {
+  display: block;
+  margin-top: 1em;
+  font-size: 1rem;
+  font-weight: 200;
+  font-family: "Poppins";
+}
+
+#canvas-container .invitation--body p.sm {
+  line-height: 2;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+canvas {
+  cursor: crosshair;
+  display: block;
+  position: relative;
+  z-index: 3;
+}
+
+canvas:active {
+  cursor: default;
+}
+
+.logout-form {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.enter {
+  background-image: url("/imgs/bg_blur.jpg");
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 25vh);
+  padding-top: 25vh;
+}
+
+.enter .cnt {
+  width: 500px;
+  margin: 0 auto;
+  -webkit-box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.45);
+          box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.45);
+}
+
+.enter .form {
+  margin: 0 auto;
+  text-align: center;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 350px;
+}
+
+.enter .form--group {
+  width: 50%;
+  max-width: 300px;
+  padding-top: 66px;
+  position: relative;
+}
+
+.enter .form--group label {
+  position: absolute;
+  left: 12px;
+  text-transform: uppercase;
+  top: 82px;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 800;
+  -webkit-transition: top 0.8s cubic-bezier(0.23, 1, 0.32, 1), font-size 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+  transition: top 0.8s cubic-bezier(0.23, 1, 0.32, 1), font-size 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+}
+
+.enter .form--group input {
+  width: 100%;
+  border: none;
+  height: 24px;
+  padding: 12px;
+  color: white;
+  font-family: "Poppins";
+  font-size: 1rem;
+  border: 2px solid white;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.88);
+}
+
+.enter .form--group input:focus ~ label {
+  top: 38px;
+  font-size: 2rem;
+  -webkit-transition: top 0.8s cubic-bezier(0.23, 1, 0.32, 1), font-size 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
+  transition: top 0.8s cubic-bezier(0.23, 1, 0.32, 1), font-size 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
+}
+
+.enter .form--group input:focus {
+  outline: 5px solid #8BAEB2;
+}
+
+.enter .form--group input:not(:placeholder-shown) ~ label {
+  top: 38px;
+  font-size: 2rem;
+}
+
+.enter .form--group input::-webkit-placeholder {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.enter .form--group input::-webkit-input-placeholder {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.enter .form--group input::-ms-input-placeholder {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.enter .form--group input::placeholder {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.enter .form--group button {
+  border: none;
+  border-radius: none;
+  font-family: "Poppins";
+}
+

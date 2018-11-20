@@ -1,0 +1,1875 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"set",
+				"setTimeout"
+			],
+			[
+				"intr",
+				"introz"
+			],
+			[
+				"transfr",
+				"transform-origin"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"leg",
+				"length"
+			],
+			[
+				"parent",
+				"parentElement"
+			],
+			[
+				"arra",
+				"array_fontH"
+			],
+			[
+				"class",
+				"classList"
+			],
+			[
+				"clas",
+				"classList"
+			],
+			[
+				"fade",
+				"fadeInUp"
+			],
+			[
+				"alb",
+				"albums"
+			],
+			[
+				"pho",
+				"photography"
+			],
+			[
+				"for",
+				"forloop\tfor()"
+			],
+			[
+				"remove",
+				"removeCurrent"
+			],
+			[
+				"transi",
+				"transition-timing-function"
+			],
+			[
+				"php",
+				"photography_dirs"
+			],
+			[
+				"grid-template",
+				"grid-template-columns\tproperty"
+			],
+			[
+				"td",
+				"td\ttext-decoration: ${1:none};"
+			],
+			[
+				"calss",
+				"classList"
+			],
+			[
+				"ine",
+				"innerHTML"
+			],
+			[
+				"old",
+				"old_active"
+			],
+			[
+				"new",
+				"new_active"
+			],
+			[
+				"prevent",
+				"preventDefault"
+			],
+			[
+				"form__group",
+				"form__group__cnt\t forms.scss"
+			],
+			[
+				"foll",
+				"follower_count"
+			],
+			[
+				"stro",
+				"story_stats"
+			],
+			[
+				"stor",
+				"story_id"
+			],
+			[
+				"scrol",
+				"scrollMap"
+			],
+			[
+				"back",
+				"backgroundImage"
+			],
+			[
+				"pro",
+				"properties"
+			],
+			[
+				"marker",
+				"marker_obj"
+			],
+			[
+				"Fea",
+				"FeatureCollection"
+			],
+			[
+				"cookie",
+				"cookie_accept"
+			],
+			[
+				"frs",
+				"first_lat"
+			],
+			[
+				"first",
+				"first_lng"
+			],
+			[
+				"cotne",
+				"content_id"
+			],
+			[
+				"form",
+				"form__group"
+			],
+			[
+				"rot",
+				"route_points"
+			],
+			[
+				"route",
+				"route_points"
+			],
+			[
+				"rote",
+				"route_point"
+			],
+			[
+				"get",
+				"getRoute"
+			],
+			[
+				"las",
+				"last_lng"
+			],
+			[
+				"firs",
+				"first_lat"
+			],
+			[
+				"fir",
+				"first_lat"
+			],
+			[
+				"direc",
+				"directionsRequest"
+			],
+			[
+				"last",
+				"last_lat"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"loca",
+				"locations"
+			],
+			[
+				"content",
+				"content_id"
+			],
+			[
+				"too",
+				"tool_name"
+			],
+			[
+				"string",
+				"stringify"
+			],
+			[
+				"step",
+				"step_location"
+			],
+			[
+				"GE",
+				"GetLatlong"
+			],
+			[
+				"dele",
+				"deleteStory"
+			],
+			[
+				"edit",
+				"edit_story_form"
+			],
+			[
+				"creat",
+				"create_story_form"
+			],
+			[
+				"order",
+				"order_cnt"
+			],
+			[
+				"st",
+				"story_content"
+			],
+			[
+				"strp",
+				"strpos"
+			],
+			[
+				"storyc",
+				"story_content"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"story",
+				"story_slug"
+			],
+			[
+				"sot",
+				"story_slug"
+			],
+			[
+				"sotr",
+				"story_hash"
+			],
+			[
+				"step_",
+				"step_location"
+			],
+			[
+				"query",
+				"querySelectorAll"
+			],
+			[
+				"dateOn",
+				"dateOnInput"
+			],
+			[
+				"soty",
+				"story_type"
+			],
+			[
+				"full",
+				"full_slug"
+			],
+			[
+				"title",
+				"title_photo"
+			],
+			[
+				"sub",
+				"submission"
+			],
+			[
+				"check",
+				"check_mb"
+			],
+			[
+				"mobil",
+				"mobileAndTabletcheck"
+			],
+			[
+				"che",
+				"checked"
+			],
+			[
+				"toggle",
+				"toggleClass"
+			],
+			[
+				"form-",
+				"form--angebot"
+			],
+			[
+				"form--ang",
+				"form--angebot--on"
+			],
+			[
+				"togge",
+				"toggleClass"
+			],
+			[
+				"form--",
+				"form--angebot--on"
+			],
+			[
+				"robo",
+				"robots_arr"
+			],
+			[
+				"robots",
+				"robots_arr"
+			],
+			[
+				"robot",
+				"robots_arr"
+			],
+			[
+				"angeo",
+				"angebote"
+			],
+			[
+				"subs",
+				"substr_replace"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"chli",
+				"childNodes"
+			],
+			[
+				"cbooking_",
+				"cbooking_packagelink"
+			],
+			[
+				"angebo",
+				"angebot_id"
+			],
+			[
+				"cbo",
+				"cbooking"
+			],
+			[
+				"cboo",
+				"cbooking_packagelink"
+			],
+			[
+				"Dat",
+				"DataSaved\tDataSaved"
+			],
+			[
+				"post_",
+				"post_inputs"
+			],
+			[
+				"zimmer_a",
+				"zimmer_anzahl"
+			],
+			[
+				"zimm",
+				"zimmer_kategorie"
+			],
+			[
+				"date_crea",
+				"date_create_from_format"
+			],
+			[
+				"arr",
+				"arrival"
+			],
+			[
+				"anrei",
+				"anreise_date"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"getPa",
+				"getParam"
+			],
+			[
+				"Bookin",
+				"BookingTags\tBookingTags"
+			],
+			[
+				"df",
+				"dfn\t element"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"Booking",
+				"BookingController\tBookingController"
+			],
+			[
+				"error",
+				"error_msg"
+			],
+			[
+				"requ",
+				"required"
+			],
+			[
+				"array_key",
+				"array_key_exists"
+			],
+			[
+				"paren",
+				"parent_name"
+			],
+			[
+				"W",
+				"WebController"
+			],
+			[
+				"al",
+				"album"
+			],
+			[
+				"rel",
+				"realData"
+			],
+			[
+				"album",
+				"album_left"
+			],
+			[
+				"a",
+				"album_right"
+			],
+			[
+				"album_",
+				"album_left"
+			],
+			[
+				"albu",
+				"album_left"
+			],
+			[
+				"slug",
+				"slugPhotographyInit"
+			],
+			[
+				"photo",
+				"photographyInit"
+			],
+			[
+				"appe",
+				"appendChild"
+			],
+			[
+				"inner",
+				"innerHTML"
+			],
+			[
+				"crea",
+				"createElement"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"mutl",
+				"multiple_images"
+			],
+			[
+				"multi",
+				"multiple_images"
+			],
+			[
+				"tools",
+				"tools_html"
+			],
+			[
+				"cur",
+				"curr_tool"
+			],
+			[
+				"nav__tool",
+				"nav__tools--item"
+			],
+			[
+				"User",
+				"UserAuth\tUserAuth"
+			],
+			[
+				"def",
+				"defaultLocale"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "resources/views/home.blade.php",
+			"settings":
+			{
+				"buffer_size": 1526,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/layouts/master.blade.php",
+			"settings":
+			{
+				"buffer_size": 1443,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/sass/app.scss",
+			"settings":
+			{
+				"buffer_size": 6747,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 345.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"bl",
+				"Set Syntax: Laravel Blade"
+			],
+			[
+				"the",
+				"UI: Select Theme"
+			],
+			[
+				"sche",
+				"UI: Select Color Scheme"
+			],
+			[
+				"schem",
+				"UI: Select Color Scheme"
+			],
+			[
+				"bla",
+				"Set Syntax: Laravel Blade"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"vue",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"them",
+				"UI: Select Theme"
+			],
+			[
+				"Them",
+				"Boxy Theme: Activation"
+			],
+			[
+				"sch",
+				"UI: Select Color Scheme"
+			],
+			[
+				"sc",
+				"UI: Select Color Scheme"
+			],
+			[
+				"the ",
+				"Boxy Theme: Environment"
+			],
+			[
+				"blad",
+				"Set Syntax: Laravel Blade"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"format ph",
+				"CodeFormatter: Format as PHP Syntax"
+			],
+			[
+				"lar",
+				"Set Syntax: Laravel Blade"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"h",
+				"Set Syntax: HTML"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"antl",
+				"Set Syntax: Antlr"
+			],
+			[
+				"Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"scheme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"Inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Blade",
+				"Set Syntax: Laravel Blade"
+			],
+			[
+				"schee",
+				"UI: Select Color Scheme"
+			],
+			[
+				"colo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"color sh",
+				"UI: Select Color Scheme"
+			],
+			[
+				"synta",
+				"Set Syntax: Sass"
+			],
+			[
+				"set the",
+				"Set Syntax: HTML (Erlang)"
+			],
+			[
+				"vue co",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"set cs",
+				"Set Syntax: CSS"
+			],
+			[
+				"edit",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"shem",
+				"UI: Select Color Scheme"
+			],
+			[
+				"blade",
+				"Set Syntax: Laravel Blade"
+			],
+			[
+				"ui",
+				"UI: Select Theme"
+			],
+			[
+				"got",
+				"GotoWindow: Switch Window"
+			],
+			[
+				"goto",
+				"GotoWindow: Switch Window"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"Sublime",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"Instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"Subli",
+				"SublimeLinter: Reload SublimeLinter and its Plugins"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"colors",
+				"UI: Select Color Scheme"
+			],
+			[
+				"make sni",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"lava",
+				"Set Syntax: Laravel Blade"
+			],
+			[
+				"edi",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"js s",
+				"Set Syntax: JavaScript (Rails)"
+			],
+			[
+				"color s",
+				"UI: Select Color Scheme"
+			],
+			[
+				"COLOR",
+				"UI: Select Color Scheme"
+			],
+			[
+				"windo",
+				"GotoWindow: Switch Window"
+			],
+			[
+				"edi s",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"make",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"php sy",
+				"CodeFormatter: Format as PHP Syntax"
+			],
+			[
+				"make sn",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"scss",
+				"CodeFormatter: Format as SCSS Syntax"
+			],
+			[
+				"format",
+				"CodeFormatter: Format as SCSS Syntax"
+			],
+			[
+				"swi",
+				"GotoWindow: Switch Window"
+			],
+			[
+				"op",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"browser",
+				"File: Open In Browser - Testing Server"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"vuefo",
+				"VUEFormatter"
+			],
+			[
+				"v",
+				"Snippet: Vue component"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Add Repository"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"s",
+				"SassBeautify"
+			],
+			[
+				"extract",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"packager",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"console",
+				"Set Syntax: R Console"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"shell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"Package Control:",
+				"Package Control: Add Repository"
+			],
+			[
+				"git",
+				"Package Control: List Packages"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"Package ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Sett",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"Packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 480.0
+	},
+	"console":
+	{
+		"height": 316.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/schoenberger/code_/newyearseve_",
+		"/Users/schoenberger/code_/newyearseve_/public",
+		"/Users/schoenberger/code_/newyearseve_/public/imgs",
+		"/Users/schoenberger/code_/newyearseve_/public/imgs/SVG",
+		"/Users/schoenberger/code_/newyearseve_/resources",
+		"/Users/schoenberger/code_/newyearseve_/resources/views",
+		"/Users/schoenberger/code_/newyearseve_/routes"
+	],
+	"file_history":
+	[
+		"/Users/schoenberger/code_/newyearseve_/database/migrations/2018_11_19_175607_create_invitation_table.php",
+		"/Users/schoenberger/code_/newyearseve_/resources/sass/_variables.scss",
+		"/Users/schoenberger/code_/newyearseve_/app/Http/Controllers/HomeController.php",
+		"/Users/schoenberger/code_/newyearseve_/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/views/404.blade.php",
+		"/Users/schoenberger/code_/newyearseve_/public/svg/404.svg",
+		"/Users/schoenberger/code_/newyearseve_/resources/views/enter.blade.php",
+		"/Users/schoenberger/code_/newyearseve_/app/Exceptions/Handler.php",
+		"/Users/schoenberger/code_/newyearseve_/vendor/laravel/framework/src/Illuminate/Routing/Route.php",
+		"/Users/schoenberger/code_/newyearseve_/vendor/symfony/routing/Router.php",
+		"/Users/schoenberger/code_/newyearseve_/app/Http/Controllers/Auth/LoginController.php",
+		"/Users/schoenberger/code_/newyearseve_/resources/views/home.blade.php",
+		"/Users/schoenberger/code_/newyearseve_/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/Users/schoenberger/code_/newyearseve_/app/Providers/AppServiceProvider.php",
+		"/Users/schoenberger/code_/newyearseve_/.env",
+		"/Users/schoenberger/code_/newyearseve_/node_modules/async/internal/breakLoop.js",
+		"/Users/schoenberger/code_/newyearseve_/node_modules/neo-async/sortByLimit.js",
+		"/Users/schoenberger/code_/newyearseve_/resources/sass/app.scss",
+		"/Users/schoenberger/code_/newyearseve_/node_modules/async/apply.js",
+		"/Users/schoenberger/code_/newyearseve_/resources/js/bootstrap.js",
+		"/Users/schoenberger/code_/newyearseve_/vendor/laravel/framework/src/Illuminate/Cache/ApcStore.php",
+		"/Users/schoenberger/code_/xoxo/resources/js/xoxo.js",
+		"/Users/schoenberger/code_/xoxo/app/Providers/AppServiceProvider.php",
+		"/Users/schoenberger/code_/xoxo/app/Http/Controllers/HomeController.php",
+		"/Users/schoenberger/code_/xoxo/app/Http/Middleware/RedirectIfAuthenticated.php",
+		"/Users/schoenberger/code_/xoxo/app/Http/Middleware/Authenticate.php",
+		"/Users/schoenberger/code_/xoxo/app/Exceptions/Handler.php",
+		"/Users/schoenberger/code_/xoxo/app/Http/Controllers/Auth/RegisterController.php",
+		"/Users/schoenberger/code_/xoxo/app/Http/Controllers/Auth/LoginController.php",
+		"/Users/schoenberger/code_/xoxo/config/auth.php",
+		"/Users/schoenberger/code_/xoxo/app/Models/User.php",
+		"/Users/schoenberger/code_/xoxo/config/services.php",
+		"/Users/schoenberger/code_/xoxo/database/factories/UserFactory.php",
+		"/Users/schoenberger/code_/xoxo/resources/sass/backend.scss",
+		"/Users/schoenberger/.ssh/id_rsa.pub",
+		"/Users/schoenberger/.ssh/id_rsa",
+		"/Users/schoenberger/code_/das_sonnreich_live_bu1/site/settings/fieldsets/site_hero_fieldset.yaml",
+		"/Users/schoenberger/code_/das_sonnreich_live_bu1/site/themes/sonnreich/templates/bilder-videos.html",
+		"/Users/schoenberger/code_/xschoenberger/resources/assets/js/routes.js",
+		"/Users/schoenberger/code_/xschoenberger/node_modules/color-convert/route.js",
+		"/Users/schoenberger/code_/vue_x1/index.html",
+		"/Users/schoenberger/code_/nacscommunity_/resources/views/frontend/partials/nav.blade.php",
+		"/Users/schoenberger/code_/nacscommunity_/package.json",
+		"/Users/schoenberger/code_/das_sonnreich_live_bu1/site/content/pages/1.hotel/2.bilder-videos/index.md",
+		"/Users/schoenberger/code_/das_sonnreich_live_bu1/assets/video/sonnreich-event_sunnybar_komprimiert.mp4",
+		"/Users/schoenberger/code_/xoxo/node_modules/neo-async/sortByLimit.js",
+		"/Users/schoenberger/code_/xoxo/resources/js/app.js",
+		"/Users/schoenberger/code_/nacscommunity_/resources/views/layouts/master.blade.php",
+		"/Users/schoenberger/code_/nacscommunity_/resources/views/welcome.blade.php",
+		"/Users/schoenberger/code_/nacscommunity_/resources/views/auth/login.blade.php",
+		"/Users/schoenberger/code_/nacscommunity_/resources/views/auth/register.blade.php",
+		"/Users/schoenberger/code_/nacscommunity_/resources/views/auth/verify.blade.php",
+		"/Users/schoenberger/code_/nacscommunity_/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/Users/schoenberger/code_/nacscommunity_/app/Providers/AppServiceProvider.php",
+		"/Users/schoenberger/code_/nacscommunity_/app/Models/User.php",
+		"/Users/schoenberger/code_/nacscommunity_/resources/views/auth/passwords/email.blade.php",
+		"/Users/schoenberger/code_/nacscommunity_/resources/views/auth/passwords/reset.blade.php",
+		"/Users/schoenberger/code_/nacscommunity_/resources/views/home.blade.php",
+		"/Users/schoenberger/code_/nacscommunity_/resources/views/backend/layouts/master.blade.php",
+		"/Users/schoenberger/code_/nacscommunity_/resources/views/frontend/layouts/master.blade.php",
+		"/Users/schoenberger/code_/nacscommunity_/.env",
+		"/Users/schoenberger/code_/xoxo/resources/js/custom.js",
+		"/Users/schoenberger/code_/xoxo/node_modules/errno/custom.js",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/statamic/resources/sass/core/fonts.scss",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/themes/sonnreich/partials/nav.html",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/statamic/resources/sass/core/typography.scss",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/settings/fieldsets/hotel.yaml",
+		"/Users/schoenberger/code/xoxo/public/js/app.js",
+		"/Users/schoenberger/code/xoxo/app/Http/Controllers/DefaultController.php",
+		"/Users/schoenberger/code/xschoenberger/node_modules/neo-async/sortByLimit.js",
+		"/Users/schoenberger/code/xschoenberger/resources/assets/js/views/Web.vue",
+		"/Users/schoenberger/code/xschoenberger/node_modules/browser-sync-ui/static/components/footer.html",
+		"/Users/schoenberger/code/xschoenberger/node_modules/bootstrap/scss/_variables.scss",
+		"/Users/schoenberger/code/xschoenberger/public/imgs/social/dribbble.svg",
+		"/Users/schoenberger/code/xschoenberger/public/imgs/social/instagram.svg",
+		"/Users/schoenberger/code/xschoenberger/resources/assets/sass/_variables.scss",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/themes/sonnreich/sass/sonnreich.scss",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/themes/sonnreich/js/custom.js",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/themes/sonnreich/layouts/sitemap.html",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/themes/sonnreich/layouts/default.html",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/themes/sonnreich/templates/sitemap.html",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/themes/sonnreich/sass/components/nav.scss",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/themes/sonnreich/sass/elements/forms.scss",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/themes/redwood/sass/components/nav.scss",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/themes/redwood/templates/home.html",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/content/globals/global.yaml",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/themes/sonnreich/templates/angebote_ubersicht.html",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/content/collections/bildergalerie/aktiv-freizeit.md",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/themes/sonnreich/templates/veranstaltungen.html",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/themes/sonnreich/templates/home.html",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/themes/sonnreich/partials/hero.html",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/content/pages/1.hotel/2.bilder-videos/index.md",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/content/taxonomies/tags/bildergalerie-aktiv-freizeit.yaml",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/themes/redwood/sass/core/settings.scss",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/statamic/resources/sass/elements/forms.scss",
+		"/Users/schoenberger/code/zivi_finding-exercises/index.html",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/.gitconfig",
+		"/Users/schoenberger/code/wanderer/app/Http/Controllers/HomeController.php",
+		"/Users/schoenberger/code/wanderer/routes/web.php",
+		"/Users/schoenberger/code/wanderer/public/svg/500.svg",
+		"/Users/schoenberger/code/wanderer/public/js/create_type.js",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/themes/sonnreich/buchen.html",
+		"/Users/schoenberger/code/xschoenberger/node_modules/cross-env/dist/variable.js",
+		"/Users/schoenberger/code/xschoenberger/resources/assets/sass/breadcrumbs.scss",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/content/pages/7.anfragen/index.md",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/content/pages/2.zimmer-preise/5.angebote/index.md",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/content/pages/index.md",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/local/storage/framework/cache/stache/pages/data",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/site/addons/Booking/BookingTags.php",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/statamic/core/Providers/RouteServiceProvider.php",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/statamic/core/Data/Entries/Collection.php",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/statamic/core/Contracts/Data/Entries/Collection.php",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/statamic/vendor/laravel/framework/src/Illuminate/Support/Collection.php",
+		"/Users/schoenberger/code/das_sonnreich_live_bu1/statamic/core/API/Collection.php",
+		"/Users/schoenberger/code/wanderer/node_modules/colors/ReadMe.md",
+		"/Users/schoenberger/code/wanderer/resources/views/frontend/user/mystories.blade.php",
+		"/Users/schoenberger/code/wanderer/README.md",
+		"/Users/schoenberger/code/wanderer/node_modules/caniuse-db/features-json/user-select-none.json",
+		"/Users/schoenberger/code/wanderer/resources/assets/sass/_variables.scss",
+		"/Users/schoenberger/code/wanderer/node_modules/cross-env/dist/variable.js",
+		"/Users/schoenberger/code/wanderer/app/Models/User.php",
+		"/Users/schoenberger/code/wanderer/resources/views/frontend/partials/footer.blade.php",
+		"/Users/schoenberger/code/wanderer/resources/views/frontend/imprint.blade.php",
+		"/Users/schoenberger/code/wanderer/resources/views/frontend/cookies.blade.php",
+		"/Users/schoenberger/code/wanderer/resources/views/frontend/terms_privacy.blade.php",
+		"/Users/schoenberger/code/wanderer/app/helpers.php",
+		"/Users/schoenberger/code/wanderer/app/Http/Controllers/UserController.php",
+		"/Users/schoenberger/code/wanderer/resources/views/frontend/auth/register.blade.php",
+		"/Users/schoenberger/code/wanderer/resources/assets/sass/forms.scss"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 182.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ascensionx"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "resources/views/home.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1526,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								411,
+								411
+							]
+						],
+						"settings":
+						{
+							"SL.17.region_keys":
+							[
+							],
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"git_gutter_is_enabled": false,
+							"rainbowth.lispy": false,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 279.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "resources/views/layouts/master.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1443,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								658,
+								658
+							]
+						],
+						"settings":
+						{
+							"SL.26.region_keys":
+							[
+							],
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"git_gutter_is_enabled": false,
+							"rainbowth.lispy": false,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 52.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "resources/sass/app.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6747,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1495,
+								1495
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"git_gutter_is_enabled": false,
+							"rainbowth.colors":
+							[
+								"#18E1E3",
+								"#FD8A28",
+								"#FEC1F7",
+								"#58E849",
+								"#929AE7",
+								"#D8DBD8",
+								"violet"
+							],
+							"rainbowth.line": 71,
+							"rainbowth.lispy": true,
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2020.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 78.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 189.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "nye.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"mastb",
+				"resources/views/layouts/master.blade.php"
+			],
+			[
+				"appsc",
+				"resources/sass/app.scss"
+			],
+			[
+				"home",
+				"resources/views/home.blade.php"
+			],
+			[
+				"fire",
+				"resources/js/fireworks.js"
+			],
+			[
+				"apps",
+				"resources/sass/app.scss"
+			],
+			[
+				"var",
+				"resources/sass/_variables.scss"
+			],
+			[
+				"404",
+				"vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/views/404.blade.php"
+			],
+			[
+				"fir",
+				"resources/js/fireworks.js"
+			],
+			[
+				"HomeC",
+				"app/Http/Controllers/HomeController.php"
+			],
+			[
+				"hom",
+				"resources/views/home.blade.php"
+			],
+			[
+				"forms",
+				"resources/assets/sass/forms.scss"
+			],
+			[
+				"Handler",
+				"app/Exceptions/Handler.php"
+			],
+			[
+				"IlluminateRou",
+				"vendor/laravel/framework/src/Illuminate/Routing/Route.php"
+			],
+			[
+				"Router",
+				"vendor/symfony/routing/Router.php"
+			],
+			[
+				"Authentic",
+				"vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php"
+			],
+			[
+				"AppSer",
+				"app/Providers/AppServiceProvider.php"
+			],
+			[
+				".en",
+				".env"
+			],
+			[
+				"usersta",
+				"database/migrations/2014_10_12_000000_create_users_table.php"
+			],
+			[
+				"ho",
+				"resources/views/home.blade.php"
+			],
+			[
+				"mast",
+				"resources/views/layouts/master.blade.php"
+			],
+			[
+				"mabl",
+				"node_modules/async/internal/breakLoop.js"
+			],
+			[
+				"masbl",
+				"node_modules/neo-async/sortByLimit.js"
+			],
+			[
+				"firewo",
+				"resources/js/fireworks.js"
+			],
+			[
+				"rweb",
+				"routes/web.php"
+			],
+			[
+				"appjs",
+				"resources/js/app.js"
+			],
+			[
+				"boots",
+				"resources/js/bootstrap.js"
+			],
+			[
+				"homeb",
+				"resources/views/home.blade.php"
+			],
+			[
+				"varia",
+				"resources/sass/_variables.scss"
+			],
+			[
+				"mastbl",
+				"resources/views/layouts/master.blade.php"
+			],
+			[
+				"web",
+				"webpack.mix.js"
+			],
+			[
+				"apsc",
+				"vendor/laravel/framework/src/Illuminate/Cache/ApcStore.php"
+			],
+			[
+				"AuthenticateU",
+				"vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php"
+			],
+			[
+				"varibs",
+				"resources/sass/_variables.scss"
+			],
+			[
+				"aps",
+				"app/Providers/AppServiceProvider.php"
+			],
+			[
+				"Handl",
+				"app/Exceptions/Handler.php"
+			],
+			[
+				"Pho",
+				"resources/js/views/Photography.vue"
+			],
+			[
+				"Home",
+				"resources/js/views/Home.vue"
+			],
+			[
+				"Defaul",
+				"app/Http/Controllers/DefaultController.php"
+			],
+			[
+				"rwe",
+				"routes/web.php"
+			],
+			[
+				"Login",
+				"app/Http/Controllers/Auth/LoginController.php"
+			],
+			[
+				"auth",
+				"config/auth.php"
+			],
+			[
+				"User",
+				"app/Models/User.php"
+			],
+			[
+				"auth.",
+				"config/auth.php"
+			],
+			[
+				"variabs",
+				"resources/sass/_variables.scss"
+			],
+			[
+				"Nav",
+				"resources/js/partials/Navigation.vue"
+			],
+			[
+				"Hom",
+				"resources/js/views/Home.vue"
+			],
+			[
+				"mas",
+				"resources/views/fe/layout/master.blade.php"
+			],
+			[
+				"heroy",
+				"site/settings/fieldsets/site_hero_fieldset.yaml"
+			],
+			[
+				"homy",
+				"site/settings/fieldsets/home.yaml"
+			],
+			[
+				"index.md",
+				"site/content/pages/index.md"
+			],
+			[
+				"hero",
+				"site/themes/sonnreich/partials/hero.html"
+			],
+			[
+				"bildga",
+				"site/settings/fieldsets/bildgalerie.yaml"
+			],
+			[
+				"bildervi",
+				"site/settings/fieldsets/bilder-videos.yaml"
+			],
+			[
+				"bilder-v",
+				"site/themes/sonnreich/templates/bilder-videos.html"
+			],
+			[
+				"semin",
+				"site/themes/sonnreich/templates/seminare.html"
+			],
+			[
+				"zimmpr",
+				"site/themes/sonnreich/templates/zimmer-preise.html"
+			],
+			[
+				"sonnre",
+				"site/themes/sonnreich/sass/sonnreich.scss"
+			],
+			[
+				"hotel",
+				"site/themes/sonnreich/templates/hotel.html"
+			],
+			[
+				"cust",
+				"site/themes/sonnreich/js/custom.js"
+			],
+			[
+				"BookingTa",
+				"site/addons/Booking/BookingTags.php"
+			],
+			[
+				"def",
+				"site/themes/sonnreich/layouts/default.html"
+			],
+			[
+				"routes",
+				"resources/assets/js/routes.js"
+			],
+			[
+				"route",
+				"node_modules/color-convert/route.js"
+			],
+			[
+				"DefaultC",
+				"app/Http/Controllers/DefaultController.php"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"videos",
+				"site/content/collections/bildergalerie/videos.md"
+			],
+			[
+				"akti",
+				"site/content/collections/bildergalerie/aktiv-freizeit.md"
+			],
+			[
+				"bilder-vi",
+				"site/content/pages/1.hotel/2.bilder-videos/index.md"
+			],
+			[
+				"bildvi",
+				"site/content/pages/1.hotel/2.bilder-videos/index.md"
+			],
+			[
+				"bild",
+				"site/themes/sonnreich/templates/bilder-videos.html"
+			],
+			[
+				"sonn",
+				"site/themes/sonnreich/sass/sonnreich.scss"
+			],
+			[
+				"sonns",
+				"assets/video/sonnreich-event_sunnybar_komprimiert.mp4"
+			],
+			[
+				"custo",
+				"site/themes/sonnreich/js/custom.js"
+			],
+			[
+				"variabsc",
+				"resources/sass/_variables.scss"
+			],
+			[
+				"Navi",
+				"resources/js/partials/Navigation.vue"
+			],
+			[
+				"masterbl",
+				"resources/views/fe/layout/master.blade.php"
+			],
+			[
+				"Photo",
+				"resources/js/views/Photography.vue"
+			],
+			[
+				"Homev",
+				"resources/js/views/Home.vue"
+			],
+			[
+				"app",
+				"resources/js/app.js"
+			],
+			[
+				"DefaultCo",
+				"app/Http/Controllers/DefaultController.php"
+			],
+			[
+				".env",
+				".env"
+			],
+			[
+				"typ",
+				"site/themes/sonnreich/sass/elements/typography.scss"
+			],
+			[
+				"cus",
+				"site/themes/sonnreich/js/custom.js"
+			],
+			[
+				"varisc",
+				"resources/sass/_variables.scss"
+			],
+			[
+				"navi",
+				"resources/js/partials/Navigation.vue"
+			],
+			[
+				"fonts",
+				"statamic/resources/sass/core/fonts.scss"
+			],
+			[
+				"nav",
+				"site/themes/sonnreich/partials/nav.html"
+			],
+			[
+				"defau",
+				"site/themes/sonnreich/layouts/default.html"
+			],
+			[
+				"typog",
+				"statamic/resources/sass/core/typography.scss"
+			],
+			[
+				"defaul",
+				"site/themes/sonnreich/layouts/default.html"
+			],
+			[
+				"mixin",
+				"statamic/resources/sass/core/mixins.scss"
+			],
+			[
+				"son",
+				"site/themes/sonnreich/sass/sonnreich.scss"
+			],
+			[
+				"Home.v",
+				"resources/assets/js/views/Home.vue"
+			],
+			[
+				"hotelin",
+				"site/content/pages/1.hotel/index.md"
+			],
+			[
+				"hote",
+				"site/settings/fieldsets/hotel.yaml"
+			],
+			[
+				"sonnreis",
+				"site/themes/sonnreich/sass/sonnreich.scss"
+			],
+			[
+				"navbl",
+				"resources/views/fe/partials/nav.blade.php"
+			],
+			[
+				"maste",
+				"resources/views/layouts/master.blade.php"
+			],
+			[
+				"footbl",
+				"resources/views/partials/footer.blade.php"
+			],
+			[
+				"Footer.",
+				"node_modules/browser-sync-ui/static/components/footer.html"
+			],
+			[
+				"_var",
+				"node_modules/bootstrap/scss/_variables.scss"
+			],
+			[
+				"vari",
+				"resources/assets/sass/_variables.scss"
+			],
+			[
+				"variasc",
+				"node_modules/bootstrap/scss/_variables.scss"
+			],
+			[
+				"ap.sc",
+				"resources/assets/sass/app.scss"
+			],
+			[
+				"Footer",
+				"resources/views/partials/footer.blade.php"
+			],
+			[
+				"sonnreichs",
+				"site/themes/sonnreich/sass/sonnreich.scss"
+			],
+			[
+				"custom",
+				"site/themes/sonnreich/js/custom.js"
+			],
+			[
+				"homeh",
+				"site/themes/sonnreich/templates/home.html"
+			],
+			[
+				"asset",
+				"site/settings/assets.yaml"
+			],
+			[
+				"formssc",
+				"site/themes/sonnreich/sass/elements/forms.scss"
+			],
+			[
+				"navs",
+				"site/themes/sonnreich/sass/components/nav.scss"
+			],
+			[
+				"navsc",
+				"site/themes/redwood/sass/components/nav.scss"
+			],
+			[
+				"homh",
+				"site/themes/redwood/templates/home.html"
+			],
+			[
+				"global",
+				"site/content/globals/global.yaml"
+			],
+			[
+				"site",
+				"site/themes/sonnreich/layouts/sitemap.html"
+			],
+			[
+				"sitema",
+				"site/themes/sonnreich/templates/sitemap.html"
+			],
+			[
+				"sonnr",
+				"site/themes/sonnreich/sass/sonnreich.scss"
+			],
+			[
+				"jobsmd",
+				"site/content/pages/12.jobs/index.md"
+			],
+			[
+				"partnermd",
+				"site/content/pages/11.partner/index.md"
+			],
+			[
+				"impres",
+				"site/themes/sonnreich/templates/impressum.html"
+			],
+			[
+				"anfra",
+				"site/themes/sonnreich/templates/anfragen.html"
+			],
+			[
+				"date_",
+				"site/themes/sonnreich/js/date_booking.js"
+			],
+			[
+				"bookib",
+				"site/themes/sonnreich/partials/booking_bar.html"
+			],
+			[
+				"hotely",
+				"site/settings/fieldsets/hotel.yaml"
+			],
+			[
+				"hotelmd",
+				"site/content/pages/1.hotel/index.md"
+			],
+			[
+				"veran",
+				"site/themes/sonnreich/templates/veranstaltungen.html"
+			],
+			[
+				"bilderga",
+				"site/content/taxonomies/tags/bildergalerie-aktiv-freizeit.yaml"
+			],
+			[
+				"hotelht",
+				"site/themes/sonnreich/templates/hotel.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 177.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
