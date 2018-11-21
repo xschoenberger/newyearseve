@@ -27,6 +27,7 @@ tl.staggerTo(document.querySelectorAll("h2.tap span"), .8, {
 }, 0.2, "-=1.5")
 document.querySelector(".show-invite").addEventListener("click", e => {
     e.preventDefault();
+    document.querySelector(".invitation").classList.toggle("active")
     document.querySelector(".invitation--head").classList.toggle("hide")
     document.querySelector(".invitation--body").classList.toggle("active")
     e.target.classList.toggle("active")

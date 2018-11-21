@@ -171,7 +171,7 @@ h2.tap {
     top:49%;
     color:white;
     letter-spacing: 8px;
-    z-index: 4;
+    z-index: 6;
     position: absolute;
     opacity: 0;
     text-transform: uppercase;
@@ -199,6 +199,9 @@ h2.tap {
         max-width: 500px;
         color: white;
         z-index: 1;
+        &.active {
+            z-index: 5;
+        }
         @media (max-width: 1070px) {
             min-width: 70%;
         }
