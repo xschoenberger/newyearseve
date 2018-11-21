@@ -27,6 +27,6 @@ class HomeController extends Controller
     }
 
     public function enter() {
-    		return view("home");
+    		return redirect()->route("login");
     }
 }

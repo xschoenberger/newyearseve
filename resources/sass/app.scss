@@ -300,6 +300,7 @@ canvas:active {
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 6;
 }
 .enter {
     background-image: url("/imgs/bg_blur.jpg");

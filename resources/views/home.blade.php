@@ -1,14 +1,14 @@
 @extends("layouts.master")
 @section("content")
 {{-- <div id="gui"></div> --}}
+@auth
+{{-- <form class="logout-form" action="{{ route("logout") }}" method="POST">
+	@csrf
+	<button type="submit">logout</button>
+</form> --}}
+@endauth
 <div id="canvas-container">
    @include("partials.svgeez")
-	@auth
-	{{-- <form class="logout-form" action="{{ route("logout") }}" method="POST">
-		@csrf
-		<button type="submit">logout</button>
-	</form> --}}
-	@endauth
 	<h2 class="tap"><span>Hi</span><br><span>{{ Auth::user()->name }} @if(Auth::user()->name == "valentina")<i>:)</i> @endif</span></h2>
 	<a class="show-invite" href="">show details</a>
 	<div class="invitation">
