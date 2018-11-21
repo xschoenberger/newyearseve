@@ -12,7 +12,7 @@
 */
 
 Route::get("/", ['uses' => 'HomeController@enter', 'as' => 'enter']);
-Route::post("/", ['uses' => 'AuthController@authEnter', 'as' => 'authEnter']);
+// Route::post("/", ['uses' => 'AuthController@authEnter', 'as' => 'authEnter']);
 
 Route::get("/invitation", ['uses' => 'AuthController@invitation', 'as' => 'invitation']);
 
