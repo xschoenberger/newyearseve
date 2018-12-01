@@ -161,7 +161,7 @@
 													<td width="100%" style="font-size: 14px; color: #8d9499; text-align: left; font-family: Poppins, Arial, sans-serif, 'Poppins'; line-height: 26px; vertical-align: top; font-weight: 400;" class="fullCenter">
 														<style type="text/css">
 														p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Poppins Neue'; color: #262626}
-														p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Poppins Neue'; color: #262626; min-height: 16.0px}</style><p class="p1"><b>{{ $name }}</b> <em style="color: #8BAEB2;">submitted</em> the first RSVP!</p><p class="p2"><br></p><p class="p2">{{ $name }} <em style="color: #8BAEB2">is {{ $rsvp }}</em> and is<em style="color:#8BAEB2;">{{ $plus_one }} bringing</em> a plus one!</p>
+														p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Poppins Neue'; color: #262626; min-height: 16.0px}</style><p class="p1"><b>{{ $name }}</b> <em style="color: #8BAEB2;">submitted</em> the first RSVP!</p><p class="p2"><br></p><p class="p2">{{ $name }} <em style="color: #8BAEB2">is {{ $rsvp }}</em>@if($rsvp == "coming")and is<em style="color:#8BAEB2;">{{ $plus_one }} bringing</em> a plus one! @else.@endif</p>
 													</td>
 												</tr>
 												<tr>
@@ -234,8 +234,8 @@
 								</tbody></table>
 								<table width="100%" border="0" cellpadding="0" cellspacing="0" align="left" style="text-align: center;" class="fullCenter">
 									<tbody><tr>
-										<td width="100%" style="text-align: center; font-family: Poppins, Arial, sans-serif, 'Poppins'; font-size: 13px; color: #bfbfbf; line-height: 26px; font-weight: 400;" class="fullCenter">
-											<strong><em><span style="font-size:16px;"><span style="font-family:Playfair Display !important; color:#3E484A;">schoenberger's</span></span></em></strong> • Leopold-Ernst-Gasse 40, Apt. 27 • 1170 Vienna, Austria<br>+43 676 51 05 269 • <a  target="_blank" href="https://newyearseve.ineffable.at" style="text-decoration: none; color: #bfbfbf;"><em><strong style="color: #bfbfbf;"><span style="font-size: 16px; color: #bfbfbf;"><span style="font-family:Playfair Display !important; color:#3E484A;">newyearseve.ineffable.at</span></span></strong></em></a>
+										<td width="100%" style="text-align: center; font-family: Poppins, Arial, sans-serif, 'Poppins'; font-size: 13px; color: #797A77; line-height: 26px; font-weight: 400;" class="fullCenter">
+											<strong><em><span style="font-size:16px;"><span style="font-family:Playfair Display !important; color:#3E484A;">schoenberger's</span></span></em></strong> • Leopold-Ernst-Gasse 40, Apt. 27 • 1170 Vienna, Austria<br>+43 676 51 05 269 • <a  target="_blank" href="https://newyearseve.ineffable.at" style="text-decoration: none; color: #bfbfbf;"><em><strong style="color: #797A77;"><span style="font-size: 16px; color: #bfbfbf;"><span style="font-family:Playfair Display !important; color:#3E484A;border-bottom:1px solid #171717;">newyearseve.ineffable.at</span></span></strong></em></a>
 										</td>
 									</tr>
 								</tbody></table>
