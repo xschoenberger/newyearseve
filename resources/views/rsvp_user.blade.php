@@ -136,7 +136,7 @@
 											<table width="184" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">
 												<tbody><tr>
 													<td width="100%" class="img184">
-														<a href="#" style="text-decoration: none;">
+														<a href="https://newyearseve.ineffable.at" style="text-decoration: none;">
 															<img src="{{ asset("imgs/NYE_logo_hxyds.png") }}" width="184" height="auto" style="width: 184px;" alt="" border="0" class="hover">
 														</a>
 													</td>
@@ -151,7 +151,7 @@
 											<table width="375" border="0" cellpadding="0" cellspacing="0" align="right" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">
 												<tbody><tr>
 													<td width="100%" style="font-size: 26px; color: #4e4e4e; font-family: Poppins, Arial, sans-serif, 'Poppins'; line-height: 32px; vertical-align: top; font-weight: 600;">
-														New RSVP submission!
+														New <em style="font-family: Playfair Display !important; font-style: normal;font-weight:600;">RSVP</em> submission!
 													</td>
 												</tr>
 												<tr>
@@ -235,7 +235,7 @@
 								<table width="100%" border="0" cellpadding="0" cellspacing="0" align="left" style="text-align: center;" class="fullCenter">
 									<tbody><tr>
 										<td width="100%" style="text-align: center; font-family: Poppins, Arial, sans-serif, 'Poppins'; font-size: 13px; color: #bfbfbf; line-height: 26px; font-weight: 400;" class="fullCenter">
-											<strong><em><span style="font-size:16px;"><span style="font-family:Playfair Display">schoenberger's</span></span></em></strong> • Leopold-Ernst-Gasse 40, Apt. 27 • 1170 Vienna, Austria<br>+43 676 51 05 269 • <a  target="_blank" href="https://newyearseve.ineffable.at" style="text-decoration: none; color: #bfbfbf;"><em><strong style="color: #bfbfbf;"><span style="font-size: 16px; color: #bfbfbf;"><span style="font-family:Playfair Display">newyearseve.ineffable.at</span></span></strong></em></a>
+											<strong><em><span style="font-size:16px;"><span style="font-family:Playfair Display !important; color:#3E484A;">schoenberger's</span></span></em></strong> • Leopold-Ernst-Gasse 40, Apt. 27 • 1170 Vienna, Austria<br>+43 676 51 05 269 • <a  target="_blank" href="https://newyearseve.ineffable.at" style="text-decoration: none; color: #bfbfbf;"><em><strong style="color: #bfbfbf;"><span style="font-size: 16px; color: #bfbfbf;"><span style="font-family:Playfair Display !important; color:#3E484A;">newyearseve.ineffable.at</span></span></strong></em></a>
 										</td>
 									</tr>
 								</tbody></table>
@@ -289,7 +289,7 @@
 									</tr>
 									<tr>
 										<td width="100%" style="text-align: center; font-family: Poppins, Arial, sans-serif, 'Poppins'; font-size: 13px; color: #8d9499; font-weight: 400;" class="fullCenter">
-											© 2018 All rights Reserved - <em><strong><span style="font-size:16px;"><span style="font-family:Playfair Display">schoenberger's</span></span></strong></em>
+											© 2018 All rights Reserved - <em><strong><span style="font-size:16px;"><span style="font-family:Playfair Display !important;">schoenberger's</span></span></strong></em>
 										</td>
 									</tr>
 									<tr>
