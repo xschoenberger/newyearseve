@@ -3,11 +3,13 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,500i,600,700,700i" rel="stylesheet">
+		{{-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> --}}
 		<base target="_blank">
-		<title>Booster Email Template</title>
+		<title>N.Y.E at schoenberger's</title>
 		<style type="text/css">
-		body *{font-family: 'Open Sans', Arial, sans-serif !important}
+		body *{font-family: 'Poppins', Arial, sans-serif !important}
 		div, p, a, li, td { -webkit-text-size-adjust:none; }
 		*{-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
 		td{word-break: break-word;}
@@ -148,7 +150,7 @@
 											
 											<table width="375" border="0" cellpadding="0" cellspacing="0" align="right" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">
 												<tbody><tr>
-													<td width="100%" style="font-size: 26px; color: #4e4e4e; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; line-height: 32px; vertical-align: top; font-weight: 600;">
+													<td width="100%" style="font-size: 26px; color: #4e4e4e; font-family: Poppins, Arial, sans-serif, 'Poppins'; line-height: 32px; vertical-align: top; font-weight: 600;">
 														New RSVP submission!
 													</td>
 												</tr>
@@ -156,10 +158,10 @@
 													<td width="100%" height="25"></td>
 												</tr>
 												<tr>
-													<td width="100%" style="font-size: 14px; color: #8d9499; text-align: left; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; line-height: 26px; vertical-align: top; font-weight: 400;" class="fullCenter">
+													<td width="100%" style="font-size: 14px; color: #8d9499; text-align: left; font-family: Poppins, Arial, sans-serif, 'Poppins'; line-height: 26px; vertical-align: top; font-weight: 400;" class="fullCenter">
 														<style type="text/css">
-														p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #262626}
-														p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #262626; min-height: 16.0px}</style><p class="p1"><b>{{ $name }}</b> <em style="color: #8BAEB2;">submitted</em> the first RSVP!</p><p class="p2"><br></p><p class="p2">{{ $name }} <em style="color: #8BAEB2">is {{ $rsvp }}</em> and is<em style="color:#8BAEB2;">{{ $plus_one }} bringing</em> a plus one!</p>
+														p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Poppins Neue'; color: #262626}
+														p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Poppins Neue'; color: #262626; min-height: 16.0px}</style><p class="p1"><b>{{ $name }}</b> <em style="color: #8BAEB2;">submitted</em> the first RSVP!</p><p class="p2"><br></p><p class="p2">{{ $name }} <em style="color: #8BAEB2">is {{ $rsvp }}</em> and is<em style="color:#8BAEB2;">{{ $plus_one }} bringing</em> a plus one!</p>
 													</td>
 												</tr>
 												<tr>
@@ -171,7 +173,7 @@
 														
 														<span class="featuredHolder"><span class="featuredHolder"><span class="featuredHolder"><span class="featuredHolder"><span class="featuredHolder"><table border="0" cellpadding="0" cellspacing="0" align="left" class="buttonScale">
 															<tbody><tr>
-																<td width="100%" align="center" height="38" bgcolor="#8BAEB2" style="border-radius: 5px; padding-left: 25px; padding-right: 25px; font-weight: 600; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; color: #ffffff; font-size: 13px; background-color: #8baeb2;">
+																<td width="100%" align="center" height="38" bgcolor="#8BAEB2" style="border-radius: 5px; padding-left: 25px; padding-right: 25px; font-weight: 600; font-family: Poppins, Arial, sans-serif, 'Poppins'; color: #ffffff; font-size: 13px; background-color: #8baeb2;">
 																	<a href="#" style="color: #ffffff; font-size: 13px; text-decoration: none; line-height: 13px; width: 100%;">View All RSVPs</a>
 																</td>
 															</tr>
@@ -215,7 +217,7 @@
 									<tbody><tr>
 										<td height="45" valign="middle" width="100%" align="center" class="logo84" style="text-align: center;">
 											<a href="https://newyearseve.ineffable.at" style="text-decoration: none;">
-												<img width="84" src="imgs/NYE_logo_hxyds.png" alt="" border="0" class="">
+												<img width="84" src="{{ asset("imgs/NYE_logo_hxyds.png") }}" alt="" border="0" class="">
 											</a>
 										</td>
 									</tr>
@@ -232,8 +234,8 @@
 								</tbody></table>
 								<table width="100%" border="0" cellpadding="0" cellspacing="0" align="left" style="text-align: center;" class="fullCenter">
 									<tbody><tr>
-										<td width="100%" style="text-align: center; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-size: 13px; color: #bfbfbf; line-height: 26px; font-weight: 400;" class="fullCenter">
-											<strong><em><span style="font-size:16px;"><span style="font-family:times new roman,times,serif;">schoenberger's</span></span></em></strong> • Leopold-Ernst-Gasse 40, Apt. 27 • 1170 Vienna, Austria<br>+43 676 51 05 269 • <a  target="_blank" href="https://newyearseve.ineffable.at" style="text-decoration: none; color: #bfbfbf;"><em><strong style="color: #bfbfbf;"><span style="font-size: 16px; color: #bfbfbf;"><span style="font-family:times new roman,times,serif;">newyearseve.ineffable.at</span></span></strong></em></a>
+										<td width="100%" style="text-align: center; font-family: Poppins, Arial, sans-serif, 'Poppins'; font-size: 13px; color: #bfbfbf; line-height: 26px; font-weight: 400;" class="fullCenter">
+											<strong><em><span style="font-size:16px;"><span style="font-family:Playfair Display">schoenberger's</span></span></em></strong> • Leopold-Ernst-Gasse 40, Apt. 27 • 1170 Vienna, Austria<br>+43 676 51 05 269 • <a  target="_blank" href="https://newyearseve.ineffable.at" style="text-decoration: none; color: #bfbfbf;"><em><strong style="color: #bfbfbf;"><span style="font-size: 16px; color: #bfbfbf;"><span style="font-family:Playfair Display">newyearseve.ineffable.at</span></span></strong></em></a>
 										</td>
 									</tr>
 								</tbody></table>
@@ -253,7 +255,7 @@
 								
 								<table width="100%" border="0" cellpadding="0" cellspacing="0" align="left" style="text-align: center;" class="fullCenter">
 									<tbody><tr>
-										<td width="100%" style="text-align: center; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-size: 13px; color: #bfbfbf; line-height: 20px; font-weight: 400;" class="fullCenter">
+										<td width="100%" style="text-align: center; font-family: Poppins, Arial, sans-serif, 'Poppins'; font-size: 13px; color: #bfbfbf; line-height: 20px; font-weight: 400;" class="fullCenter">
 											<a href="#" style="color: #bfbfbf; text-decoration: none;"><br></a>
 										</td>
 									</tr>
@@ -286,8 +288,8 @@
 										<td width="100%" height="25"></td>
 									</tr>
 									<tr>
-										<td width="100%" style="text-align: center; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-size: 13px; color: #8d9499; font-weight: 400;" class="fullCenter">
-											© 2018 All rights Reserved - <em><strong><span style="font-size:16px;"><span style="font-family:times new roman,times,serif;">schoenberger's</span></span></strong></em>
+										<td width="100%" style="text-align: center; font-family: Poppins, Arial, sans-serif, 'Poppins'; font-size: 13px; color: #8d9499; font-weight: 400;" class="fullCenter">
+											© 2018 All rights Reserved - <em><strong><span style="font-size:16px;"><span style="font-family:Playfair Display">schoenberger's</span></span></strong></em>
 										</td>
 									</tr>
 									<tr>
