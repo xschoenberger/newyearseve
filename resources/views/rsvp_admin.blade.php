@@ -174,7 +174,7 @@
 														<span class="featuredHolder"><span class="featuredHolder"><span class="featuredHolder"><span class="featuredHolder"><span class="featuredHolder"><table border="0" cellpadding="0" cellspacing="0" align="left" class="buttonScale">
 															<tbody><tr>
 																<td width="100%" align="center" height="38" bgcolor="#8BAEB2" style="border-radius: 5px; padding-left: 25px; padding-right: 25px; font-weight: 600; font-family: Poppins, Arial, sans-serif, 'Poppins'; color: #ffffff; font-size: 13px; background-color: #8baeb2;">
-																	<a href="#" style="color: #ffffff; font-size: 13px; text-decoration: none; line-height: 13px; width: 100%;">View All RSVPs</a>
+																	<a target="_blank" href="https://newyearseve.ineffable.at/cp" style="color: #ffffff; font-size: 13px; text-decoration: none; line-height: 13px; width: 100%;">View All RSVPs</a>
 																</td>
 															</tr>
 														</tbody></table></span></span></span></span></span>
