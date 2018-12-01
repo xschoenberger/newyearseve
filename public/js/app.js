@@ -47497,7 +47497,9 @@ if (document.querySelector("#canvas-container")) {
 document.querySelector(".show-invite").addEventListener("click", function (e) {
     e.preventDefault();
     document.querySelector(".invitation").classList.toggle("active");
-    document.querySelector(".invitation--head").classList.toggle("hide");
+    if (document.querySelector(".invitation--head")) {
+        document.querySelector(".invitation--head").classList.toggle("hide");
+    }
     document.querySelector(".invitation--body").classList.toggle("active");
     e.target.classList.toggle("active");
     if (e.target.innerHTML.indexOf("hide") !== -1) {
