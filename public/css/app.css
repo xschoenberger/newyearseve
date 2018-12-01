@@ -888,12 +888,17 @@ h2.tap i {
 
 .rsvp-fin .info p {
   margin: .25em 0;
+  font-style: italic;
+  font-size: 1.1rem;
 }
 
 .rsvp-fin .info p strong {
   text-transform: uppercase;
   position: absolute;
+  font-style: normal;
   left: 40%;
+  font-size: 1.5rem;
+  line-height: 1.1;
 }
 
 .rsvp-fin .info p strong:nth-of-type(2) {

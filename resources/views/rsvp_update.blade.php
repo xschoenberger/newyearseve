@@ -161,7 +161,7 @@
 													<td width="100%" style="font-size: 14px; color: #8d9499; text-align: left; font-family: Poppins, Arial, sans-serif, 'Poppins'; line-height: 26px; vertical-align: top; font-weight: 400;" class="fullCenter">
 														<style type="text/css">
 														p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Poppins Neue'; color: #262626}
-														p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Poppins Neue'; color: #262626; min-height: 16.0px}</style><p class="p1"><b>{{ $name }}</b> <em style="color: #8BAEB2;">updated</em> the RSVP!</p><p class="p2"><br></p><p class="p2">{{ $name }} changed the status to<em style="color: #8BAEB2"> {{ $rsvp }}</em>@if($rsvp == "coming")and is<em style="color:#8BAEB2;">{{ $plus_one }} bringing</em> a plus one! @else.@endif</p>
+														p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Poppins Neue'; color: #262626; min-height: 16.0px}</style><p class="p1"><b>{{ $name }}</b> <em style="color: #8BAEB2;">updated</em> the RSVP!</p><p class="p2"><br></p><p class="p2">{{ $name }} changed the status to<em style="color: #8BAEB2;font-weight:600;"> {{ $rsvp }}</em>@if($rsvp == "coming")and is<em style="color:#8BAEB2;font-weight:600;">{{ $plus_one }} bringing</em> a plus one! @else.@endif</p>
 													</td>
 												</tr>
 												<tr>

@@ -657,10 +657,15 @@ h2.tap {
         position: relative;
         p {
             margin: .25em 0;
+            font-style: italic;
+            font-size: 1.1rem;
             strong {
                 text-transform: uppercase;
                 position: absolute;
+                font-style: normal;
                 left: 40%;
+                font-size: 1.5rem;
+                line-height: 1.1;
                 &:nth-of-type(2) {
                     opacity: 0;
                     visibility: hidden;
