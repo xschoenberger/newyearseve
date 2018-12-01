@@ -39,6 +39,14 @@ h2.tap {
   transition: opacity .88s ease;
 }
 
+@media (max-width: 900px) {
+  h2.tap {
+    width: 80%;
+    font-size: 2rem;
+    letter-spacing: 10px;
+  }
+}
+
 h2.tap span {
   -webkit-transition: opacity .88s ease;
   transition: opacity .88s ease;
@@ -72,6 +80,47 @@ h2.tap i {
   font-size: 1.4rem;
   display: inline-block;
   position: relative;
+}
+
+.alert {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: antiquewhite;
+  font-weight: 600;
+  background-color: black;
+  -webkit-box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.4);
+  -webkit-transition: opacity .3s ease, visibility .1s linear 0s;
+  transition: opacity .3s ease, visibility .1s linear 0s;
+}
+
+.alert.rm {
+  -webkit-transition: opacity .3s ease, visibility .1s linear .3s;
+  transition: opacity .3s ease, visibility .1s linear .3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.alert .exit {
+  position: absolute;
+  right: 30px;
+  letter-spacing: 2px;
+  opacity: .66;
+  color: white;
+  padding: 6px;
+  cursor: pointer;
 }
 
 .svgee {
@@ -244,53 +293,81 @@ h2.tap i {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: 49%;
+  top: 31%;
   color: white;
   letter-spacing: 8px;
   z-index: 6;
   position: absolute;
   opacity: 0;
   text-transform: uppercase;
+  -webkit-transition: opacity 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: opacity 0.5s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 .show-invite.active {
-  top: 10%;
+  top: 5%;
+}
+
+.show-invite.fade {
+  opacity: .2;
+}
+
+@media (max-width: 800px) {
+  .show-invite {
+    top: 26%;
+  }
+}
+
+::webkit-scrollbar {
+  display: none;
 }
 
 #canvas-container {
-  background-image: url(/imgs/bg_blur.jpg);
+  background-image: url(/imgs/stars_blur.jpg);
   position: absolute;
   width: 100%;
   background-size: cover;
   background-position: center;
   height: 100%;
   z-index: 2;
+  color: antiquewhite;
 }
 
-#canvas-container .invitation {
+.invitation {
   position: fixed;
+  overflow: scroll;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: 95%;
-  min-width: 50%;
+  height: 92%;
+  min-width: 80%;
   max-width: 500px;
   color: white;
   z-index: 1;
+  -webkit-transition: background-color .4s ease;
+  transition: background-color .4s ease;
+  padding-bottom: 50px;
 }
 
-#canvas-container .invitation.active {
+.invitation.active {
   z-index: 5;
+  background-color: rgba(20, 21, 23, 0.94);
 }
 
-@media (max-width: 1070px) {
-  #canvas-container .invitation {
-    min-width: 70%;
+@media (min-width: 1200px) {
+  .invitation {
+    min-width: 50%;
   }
 }
 
-#canvas-container .invitation .bg {
+@media (max-width: 700px) {
+  .invitation {
+    height: 88%;
+  }
+}
+
+.invitation .bg {
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -300,89 +377,625 @@ h2.tap i {
   transition: top .3s ease;
 }
 
-#canvas-container .invitation--head {
+.invitation--head {
   opacity: 0;
-  text-align: center;
   margin-top: 3em;
   top: 35%;
+  text-align: center;
   position: relative;
   -webkit-transition: opacity .4s ease;
   transition: opacity .4s ease;
 }
 
-#canvas-container .invitation--head.hide {
+@media (max-width: 700px) {
+  .invitation--head {
+    margin-top: 1.6em;
+  }
+}
+
+.invitation--head.hide {
   opacity: 0 !important;
 }
 
-#canvas-container .invitation--head h2 {
+.invitation--head h2 {
   font-size: 5rem;
   margin: 0;
   font-family: "Playfair Display";
   font-weight: 300;
 }
 
-#canvas-container .invitation--head h3 {
+.invitation--head h3 {
+  font-family: "Playfair Display";
   margin: 0;
-  margin-top: 2em;
+  margin-top: 1.8em;
   position: relative;
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.6rem;
+  font-style: italic;
+  line-height: 1.2;
 }
 
-#canvas-container .invitation--head a {
+@media (max-width: 1000px) {
+  .invitation--head h2 {
+    font-size: 4rem;
+  }
+
+  .invitation--head h3 {
+    font-size: 1.3rem;
+  }
+}
+
+.invitation--head a {
   text-transform: uppercase;
   top: 70px;
   position: relative;
   letter-spacing: 10px;
 }
 
-#canvas-container .invitation--body {
+.invitation--body {
+  text-align: center;
   opacity: 0;
-  padding: 50px 38px 20px 38px;
+  padding: 25px 38px 20px 38px;
   -webkit-transition: opacity .4s ease;
   transition: opacity .4s ease;
+  position: relative;
+  top: -60px;
 }
 
-#canvas-container .invitation--body.active {
+@media (max-height: 900px) {
+  .invitation--body {
+    padding-top: 0;
+  }
+}
+
+.invitation--body.active {
   opacity: 1;
 }
 
-#canvas-container .invitation--body h2,
-#canvas-container .invitation--body h3,
-#canvas-container .invitation--body h4,
-#canvas-container .invitation--body h5,
-#canvas-container .invitation--body h6 {
+.invitation--body h2,
+.invitation--body h3,
+.invitation--body h4 {
   font-family: "Playfair Display";
   font-weight: 300;
   font-size: 2.25rem;
-  margin-top: 1.5em;
+  margin-top: 1.75em;
+  position: relative;
+  text-align: center;
+}
+
+.invitation--body h2 .h,
+.invitation--body h3 .h,
+.invitation--body h4 .h {
+  font-style: normal;
+  font-weight: 300;
   position: relative;
 }
 
-#canvas-container .invitation--body h2:before,
-#canvas-container .invitation--body h3:before,
-#canvas-container .invitation--body h4:before,
-#canvas-container .invitation--body h5:before,
-#canvas-container .invitation--body h6:before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: -30px;
-  top: 1ch;
-  width: 20px;
-  height: 1px;
-  background-color: #fff;
+@media (max-width: 1000px) {
+  .invitation--body h2,
+  .invitation--body h3,
+  .invitation--body h4 {
+    font-size: 1.8rem;
+  }
 }
 
-#canvas-container .invitation--body h3 .sm {
+.invitation--body h2:first-of-type,
+.invitation--body h3:first-of-type,
+.invitation--body h4:first-of-type {
+  margin-top: .7em;
+}
+
+.invitation--body h2 .h:before,
+.invitation--body h3 .h:before,
+.invitation--body h4 .h:before {
+  content: "";
+  display: block;
+  font-size: 1rem;
+  position: absolute;
+  left: -20px;
+  top: .5ch;
+}
+
+.invitation--body h2:nth-of-type(1) .h:before,
+.invitation--body h3:nth-of-type(1) .h:before,
+.invitation--body h4:nth-of-type(1) .h:before {
+  content: "01";
+}
+
+.invitation--body h2:nth-of-type(2) .h:before,
+.invitation--body h3:nth-of-type(2) .h:before,
+.invitation--body h4:nth-of-type(2) .h:before {
+  content: "02";
+}
+
+.invitation--body h3 .sm {
   display: block;
   margin-top: 1em;
   font-size: 1rem;
-  font-weight: 200;
   font-family: "Poppins";
+  font-weight: 200;
 }
 
-#canvas-container .invitation--body p.sm {
+@media (max-width: 1000px) {
+  .invitation--body h3 .sm {
+    font-size: .9rem;
+  }
+}
+
+.invitation--body h3 .sm a {
+  font-weight: 700;
+}
+
+.invitation--body p.sm {
   line-height: 2;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: 40px auto 0 auto;
+  font-size: .9rem;
+  text-transform: capitalize;
+  max-width: 550px;
+}
+
+@media (max-width: 700px) {
+  .invitation--body p.sm {
+    margin-top: 35px;
+  }
+}
+
+.invitation--body .form {
+  margin-top: 40px;
+}
+
+.invitation--body .form h3 {
+  margin-bottom: 0;
+}
+
+.invitation--body .form h3 span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 200;
+  margin-top: 16px;
+  letter-spacing: 1px;
+}
+
+.invitation--body .form h3 .h:before {
+  content: "03";
+}
+
+.invitation--body .form h5 {
+  margin-top: 4px;
+  font-weight: 200;
+  font-size: .88rem;
+  font-style: italic;
+}
+
+.invitation--body .form--group {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.invitation--body .form--group--cnt {
+  margin: 2px 21px;
+  position: relative;
+}
+
+.invitation--body .form--group--cnt input {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  width: 0;
+}
+
+.invitation--body .form--group--cnt input ~ label {
+  text-transform: capitalize;
+  opacity: .5;
+  -webkit-transition: opacity .4s ease;
+  transition: opacity .4s ease;
+  cursor: pointer;
+  padding: 12px 8px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: block;
+  position: relative;
+}
+
+.invitation--body .form--group--cnt input ~ label:not(.plus_one):before,
+.invitation--body .form--group--cnt input ~ label:not(.plus_one):after {
+  content: "";
+  position: absolute;
+  left: -14px;
+  height: 1px;
+  width: 0;
+  background-color: white;
+  top: 40%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  -webkit-transition: width .4s ease;
+  transition: width .4s ease;
+}
+
+.invitation--body .form--group--cnt input ~ label:not(.plus_one):after {
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+  -webkit-transform: translateY(-50%) rotate(-49deg);
+          transform: translateY(-50%) rotate(-49deg);
+}
+
+.invitation--body .form--group--cnt input ~ span.input-icon {
+  position: absolute;
+  left: 0;
+  top: calc(12px + .96ch);
+  -webkit-transform: translateY(-50%) scaleX(1);
+          transform: translateY(-50%) scaleX(1);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  height: 2px;
+  pointer-events: none;
+  background-color: white;
+  width: 100%;
+  -webkit-transition: -webkit-transform .4s ease;
+  transition: -webkit-transform .4s ease;
+  transition: transform .4s ease;
+  transition: transform .4s ease, -webkit-transform .4s ease;
+  opacity: .5;
+}
+
+.invitation--body .form--group--cnt input:checked ~ span.input-icon {
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+  -webkit-transform: translateY(-50%) scaleX(0);
+          transform: translateY(-50%) scaleX(0);
+}
+
+.invitation--body .form--group--cnt input:checked ~ label:first-of-type {
+  opacity: 1;
+}
+
+.invitation--body .form--group--cnt input:checked ~ label:not(.plus_one):before {
+  width: 14px;
+}
+
+.invitation--body .form--group--cnt input:checked ~ label:not(.plus_one):after {
+  width: 16px;
+}
+
+.invitation--body .form--group--cnt input ~ #plus_one {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 0;
+}
+
+.invitation--body .form--group--cnt input ~ label[for="plus_one"] {
+  opacity: 0;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  position: absolute;
+  /* left: calc(100% + 21px); */
+  width: 170px;
+  text-align: left;
+  /* transform: translateX(-50%); */
+  padding-bottom: 28px;
+  bottom: -60px;
+}
+
+.invitation--body .form--group--cnt input ~ label[for="plus_one"] ~ .pal {
+  position: absolute;
+  bottom: -55px;
+  left: 10px;
+  -webkit-transition: opacity .2s linear;
+  transition: opacity .2s linear;
+  pointer-events: none;
+}
+
+.invitation--body .form--group--cnt input ~ label[for="plus_one"] ~ .pal--nah {
+  opacity: 0;
+}
+
+.invitation--body .form--group--cnt input ~ label[for="plus_one"] ~ .pal--yuh {
+  opacity: 0;
+}
+
+.invitation--body .form--group--cnt input#yes:checked ~ label[for="plus_one"] {
+  opacity: 1;
+}
+
+.invitation--body .form--group--cnt input#yes:not(:checked) ~ label[for="plus_one"] ~ .pal {
+  opacity: 0;
+}
+
+.invitation--body .form--group--cnt input ~ #plus_one:checked ~ .pal--yuh {
+  opacity: 1;
+}
+
+.invitation--body .form--group--cnt input ~ #plus_one:checked ~ .pal--nah {
+  opacity: 0;
+}
+
+.invitation--body .form--group--cnt input ~ #plus_one:not(:checked) ~ .pal--nah {
+  opacity: 1;
+}
+
+.invitation--body .form--group--cnt input ~ #plus_one:not(:checked) ~ .pal--yuh {
+  opacity: 0;
+}
+
+.invitation--body .form--submit {
+  position: relative;
+  top: 96px;
+}
+
+.invitation--body .form--submit .btn {
+  background-color: transparent;
+  font-family: "Playfair Display";
+  font-size: 1.1rem;
+  padding: 6px 12px;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  top: 4px;
+  -webkit-transition: color .3s ease, background-color .3s ease, top .3s ease, border-color .4s ease;
+  transition: color .3s ease, background-color .3s ease, top .3s ease, border-color .4s ease;
+}
+
+.invitation--body .form--submit .btn:focus {
+  outline: none;
+  border-color: #8BAEB2;
+}
+
+.invitation--body .form--submit .btn.active {
+  top: 0;
+  background-color: white;
+  color: black;
+}
+
+.invitation--body .form--submit .info,
+.invitation--body .form--submit .rsvp-msg {
+  display: block;
+  font-size: .96rem;
+  position: relative;
+  top: 15px;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease, top .3s ease;
+  transition: opacity .3s ease, top .3s ease;
+}
+
+.invitation--body .form--submit .info.active,
+.invitation--body .form--submit .rsvp-msg.active {
+  top: 10px;
+  opacity: 1;
+}
+
+.rsvp-fin {
+  padding: 56px;
+  text-transform: capitalize;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 20vh;
+  color: #efe9e2;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.rsvp-fin .invitation {
+  -webkit-transition: opacity .5s ease, visibility .01s linear .6s;
+  transition: opacity .5s ease, visibility .01s linear .6s;
+  visibility: hidden;
+}
+
+.rsvp-fin .invitation.active {
+  -webkit-transition: opacity .5s ease, visibility .01s linear 0s;
+  transition: opacity .5s ease, visibility .01s linear 0s;
+  background-color: rgba(20, 21, 23, 0.98);
+  -webkit-box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.4);
+  visibility: visible;
+}
+
+.rsvp-fin .invitation--body {
+  padding-top: 20vh;
+}
+
+.rsvp-fin .invitation--body .sm {
+  margin: 0;
+}
+
+.rsvp-fin .invitation--body p.sm {
+  margin: 0 auto;
+}
+
+.rsvp-fin .show-invite {
+  opacity: 1;
+  font-size: 1rem;
+  top: 5%;
+}
+
+.rsvp-fin em {
+  font-style: normal;
+  font-family: "Playfair Display";
+  font-weight: 600;
+  border-bottom: 2px solid white;
+  letter-spacing: 1px;
+}
+
+.rsvp-fin h2 {
+  font-size: 3rem;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+.rsvp-fin h2:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: .7ch;
+  width: calc(100% + 106px);
+  height: 12px;
+  background-color: #8BAEB2;
+  z-index: -1;
+  opacity: .33;
+}
+
+.rsvp-fin div.submit {
+  text-align: center;
+}
+
+.rsvp-fin div.submit button {
+  background-color: white;
+  font-family: "Playfair Display";
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  padding: 6px 12px;
+  border: 1px solid white;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  top: 4px;
+  line-height: 30px;
+  -webkit-transition: color .3s ease, background-color .3s ease, top .3s ease, border-color .4s ease;
+  transition: color .3s ease, background-color .3s ease, top .3s ease, border-color .4s ease;
+}
+
+.rsvp-fin div.submit button:focus {
+  outline: none;
+  border-color: #8BAEB2;
+}
+
+.rsvp-fin div.submit button.active {
+  top: 0;
+  background-color: white;
+  color: black;
+}
+
+.rsvp-fin .info {
+  position: relative;
+}
+
+.rsvp-fin .info p {
+  margin: .25em 0;
+}
+
+.rsvp-fin .info p strong {
+  text-transform: uppercase;
+  position: absolute;
+  left: 40%;
+}
+
+.rsvp-fin .info p strong:nth-of-type(2) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.rsvp-fin .info label.switch {
+  position: absolute;
+  left: calc(70% - 4px);
+  text-transform: lowercase;
+  font-size: 1rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+  padding: 4px;
+  bottom: calc(.4ch - 4px);
+  color: #b3d3d6;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: opacity .3s ease, visibility .1s linear 0s;
+  transition: opacity .3s ease, visibility .1s linear 0s;
+}
+
+.rsvp-fin .info label.switch[for^="yes"] {
+  border: 1px solid #8BAEB2;
+  color: #8BAEB2;
+}
+
+.rsvp-fin .info label.switch[for^="no"] {
+  border: 1px solid #b6b7b7;
+  color: #b6b7b7;
+}
+
+.rsvp-fin .info label.switch:nth-of-type(2) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.rsvp-fin .info input.switch_input {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.rsvp-fin .info input.switch_input:nth-of-type(1):checked ~ label:nth-of-type(2) {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.rsvp-fin .info input.switch_input:nth-of-type(1):checked ~ p strong:nth-of-type(2) {
+  -webkit-transition: opacity .3s ease, visibility .1s linear .3s;
+  transition: opacity .3s ease, visibility .1s linear .3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.rsvp-fin .info input.switch_input:nth-of-type(2):checked ~ label:nth-of-type(1) {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.rsvp-fin .info input.switch_input:nth-of-type(2):checked ~ label:nth-of-type(2) {
+  visibility: visible;
+  opacity: 1;
+}
+
+.rsvp-fin .info input.switch_input:nth-of-type(2):checked ~ p strong:nth-of-type(1) {
+  -webkit-transition: opacity .3s ease, visibility .1s linear .3s;
+  transition: opacity .3s ease, visibility .1s linear .3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.rsvp-fin .info input.switch_input:nth-of-type(2):checked ~ p strong:nth-of-type(2) {
+  visibility: visible;
+  opacity: 1;
+}
+
+.rsvp-fin .cal {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.rsvp-fin .cal p {
+  font-size: 1.2rem;
+}
+
+.rsvp-fin .cal p a {
+  position: relative;
+}
+
+.rsvp-fin .cal p a img {
+  left: -26px;
+  top: 3px;
+  width: 20px;
+  position: absolute;
+}
+
+.rsvp-fin .svgee {
+  -webkit-animation: none;
+          animation: none;
 }
 
 canvas {
@@ -404,11 +1017,22 @@ canvas:active {
 }
 
 .enter {
-  background-image: url("/imgs/bg_blur.jpg");
+  background-image: url("/imgs/stars_blur.jpg");
   background-size: cover;
   background-position: center;
   height: calc(100vh - 25vh);
   padding-top: 25vh;
+}
+
+.enter h2 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  color: white;
+  position: relative;
+  margin-top: -100px;
+  padding-bottom: 50px;
 }
 
 .enter .cnt {
@@ -478,7 +1102,6 @@ canvas:active {
 
 .enter .form--group input:focus ~ label {
   top: 38px;
-  font-size: 2rem;
   -webkit-transition: top 0.8s cubic-bezier(0.23, 1, 0.32, 1), font-size 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
   transition: top 0.8s cubic-bezier(0.23, 1, 0.32, 1), font-size 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
 }
@@ -489,7 +1112,6 @@ canvas:active {
 
 .enter .form--group input:not(:placeholder-shown) ~ label {
   top: 38px;
-  font-size: 2rem;
 }
 
 .enter .form--group input::-webkit-placeholder {
@@ -521,8 +1143,10 @@ canvas:active {
   background-color: transparent;
   border: 2px white solid;
   cursor: pointer;
+  font-size: .9rem;
   width: 100px;
   color: white;
   margin-bottom: 35px;
+  background-color: black;
 }
 

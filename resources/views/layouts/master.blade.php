@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>N.Y.E @ schoenbergers'</title>
+        <title>N.Y.E @ schoenberger's</title>
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="stylesheet" href="/css/app.css">
         <link rel="icon" href="/imgs/icons/fireworks.png">

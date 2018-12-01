@@ -12,10 +12,15 @@
 */
 
 Route::get("/", ['uses' => 'HomeController@enter', 'as' => 'enter']);
+Route::post("/", ['uses' => 'HomeController@rsvpSubmit', 'as' => 'rsvp.post']);
+Route::get("/fin", ['uses' => 'HomeController@rsvpFin', 'as' => 'rsvp.fin']);
+Route::post("/fin", ['uses' => 'HomeController@rsvpUpdate', 'as' => 'rsvp.update']);
 // Route::post("/", ['uses' => 'AuthController@authEnter', 'as' => 'authEnter']);
 
-Route::get("/invitation", ['uses' => 'AuthController@invitation', 'as' => 'invitation']);
 
 Auth::routes();
+
+
+// Route::get("/register", ['uses' => 'HomeController@delRegister', 'as' => 'del.register']);
 
 Route::get('/home', 'HomeController@index')->name('home');

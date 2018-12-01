@@ -7,24 +7,65 @@
 // setTimeout(e => {
 //  document.querySelector("h2.tap").remove()
 // }, 12000)
+//////////////////////////////////////////////
+var isMobile = false; //initiate as false
+// device detection
+if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0, 4))) {
+    isMobile = true;
+}
+if (isMobile) {
+    console.log("mobile!!!");
+}
+////////////////////////////////
 let tl = new TimelineLite();
-tl.staggerTo(document.querySelectorAll("h2.tap span"), .8, {
-    opacity: 1,
-    delay: 2.5
-}, 0.5).to(document.querySelector("h2.tap"), .8, {
-    opacity: 0,
-    delay: 1
-}).to(document.querySelector(".invitation .bg"), .6, {
-    opacity: 1,
-    delay: 1
-}).to(document.querySelector(".invitation--head"), .8, {
-    opacity: 1,
-}).to(document.querySelector(".show-invite"), .5, {
-    opacity: 1
-}, "-=0.5").staggerTo(document.querySelectorAll(".svgee"), 1, {
-    opacity: 1,
-    transform: "translateY(0)"
-}, 0.2, "-=1.5")
+if (document.querySelector("#canvas-container")) {
+    tl.staggerTo(document.querySelectorAll("h2.tap span"), .8, {
+        opacity: 1,
+        delay: 1
+    }, 0.5).to(document.querySelector("h2.tap"), .6, {
+        opacity: 0,
+        delay: .6
+    }).to(document.querySelector(".invitation .bg"), .6, {
+        opacity: 1,
+        delay: .7
+    }).to(document.querySelector(".invitation--head"), .6, {
+        opacity: 1,
+    }).to(document.querySelector(".show-invite"), .5, {
+        opacity: 1
+    }, "-=0.75").staggerTo(document.querySelectorAll(".svgee"), .8, {
+        opacity: 1,
+        transform: "translateY(0)"
+    }, 0.2, "-=1.5")
+    const rsvp = document.querySelectorAll("input[name='rsvp']")
+    const rsvp_form = document.querySelector("form.form.rsvp")
+    rsvp.forEach(e => {
+        e.addEventListener("click", e => {
+            document.querySelector("form.form.rsvp .form--submit .info").classList.remove("active")
+            if (e.target.getAttribute("id") == "no") {
+                document.querySelector(".form--submit .rsvp-msg").innerHTML = "Unfortunate :/ Happy New Year though! Have a nice 31st :)"
+                document.querySelector(".form--submit .rsvp-msg").classList.add("active")
+            } else {
+                document.querySelector(".form--submit .rsvp-msg").innerHTML = "Ayy! Glad to have you :)"
+                document.querySelector(".form--submit .rsvp-msg").classList.add("active")
+                // document.querySelector(".form--submit .rsvp-msg").classList.remove("active")
+            }
+        })
+    })
+    rsvp_form.addEventListener("submit", ev => {
+        ev.target.querySelector("button.btn").classList.add("active")
+        setTimeout(evv => {
+            ev.target.querySelector("button.btn").classList.remove("active")
+        }, 700)
+        rsvp_checked = (document.querySelector("input[name='rsvp']:checked") !== null) ? true : false;
+        console.log(rsvp_checked);
+        if (!rsvp_checked) {
+            ev.preventDefault()
+            document.querySelector("form.form.rsvp .form--submit .info").classList.add("active")
+            return false
+        }
+        return true
+    })
+}
 document.querySelector(".show-invite").addEventListener("click", e => {
     e.preventDefault();
     document.querySelector(".invitation").classList.toggle("active")
@@ -37,34 +78,63 @@ document.querySelector(".show-invite").addEventListener("click", e => {
         e.target.innerHTML = "hide details"
     }
 })
-///////////// HOVER ANIMATION /////////////
-const cards = document.querySelector(".invitation--head");
-const images = document.querySelectorAll(".svgee");
-const range = 40;
-// const calcValue = (a, b) => (((a * 100) / b) * (range / 100) -(range / 2)).toFixed(1);
-const calcValue = (a, b) => (a / b * range - range / 2).toFixed(1) // thanks @alice-mx
-let timeout;
-document.addEventListener('mousemove', ({
-    x,
-    y
-}) => {
-    if (timeout) {
-        window.cancelAnimationFrame(timeout);
-    }
-    timeout = window.requestAnimationFrame(() => {
-        const yValue = calcValue(y, window.innerHeight);
-        const xValue = calcValue(x, window.innerWidth);
-        cards.style.transform = `rotateX(${xValue*0.6}deg) rotateY(${yValue*0.6}deg) translate(${xValue*0.5}px, ${yValue*0.5}px)`;
-        [].forEach.call(images, (image) => {
-            image.style.marginTop = `${-xValue}px`;
-            image.style.marginLeft = `${yValue}px`;
-        });
-        // [].forEach.call(backgrounds, (background) => {
-        //     background.style.backgroundPosition = `${xValue*.45}px ${-yValue*.45}px`;
-        // })
+if (document.querySelector(".alert")) {
+    document.querySelector(".alert").addEventListener("click", ev => {
+        ev.target.parentElement.classList.add("rm")
+        setTimeout(e => {
+            ev.target.parentElement.remove()
+        }, 1000)
     })
-}, false);
+}
+if (document.querySelector(".rsvp-fin")) {
+    TweenMax.staggerTo(document.querySelectorAll(".svgee"), 1, {
+        opacity: 0.33,
+        transform: "translateY(0)",
+        delay: 0.5
+    }, 0.16)
+}
 ///////////// HOVER ANIMATION /////////////
+if (!isMobile && document.querySelector("#canvas-container")) {
+    const cards = document.querySelector(".invitation--head");
+    const images = document.querySelectorAll(".svgee");
+    const range = 40;
+    // const calcValue = (a, b) => (((a * 100) / b) * (range / 100) -(range / 2)).toFixed(1);
+    const calcValue = (a, b) => (a / b * range - range / 2).toFixed(1) // thanks @alice-mx
+    let timeout;
+    document.addEventListener('mousemove', ({
+        x,
+        y
+    }) => {
+        if (timeout) {
+            window.cancelAnimationFrame(timeout);
+        }
+        timeout = window.requestAnimationFrame(() => {
+            const yValue = calcValue(y, window.innerHeight);
+            const xValue = calcValue(x, window.innerWidth);
+            cards.style.transform = `rotateX(${xValue*0.6}deg) rotateY(${yValue*0.6}deg) translate(${xValue*0.5}px, ${yValue*0.5}px)`;
+            [].forEach.call(images, (image) => {
+                image.style.marginTop = `${-xValue}px`;
+                image.style.marginLeft = `${yValue}px`;
+                image.style.transform = `rotateX(${xValue*0.6}deg) rotateY(${yValue*0.6}deg) translate(${xValue*0.5}px, ${yValue*0.5}px)`;
+            });
+            // [].forEach.call(backgrounds, (background) => {
+            //     background.style.backgroundPosition = `${xValue*.45}px ${-yValue*.45}px`;
+            // })
+        })
+    }, false);
+}
+if (isMobile && document.querySelector("#canvas-container")) {
+    document.querySelector(".invitation").addEventListener("scroll", e => {
+        console.log(document.querySelector(".invitation--body h3:first-child").offsetTop);
+        console.log(document.querySelector(".invitation--body h3:first-child").scrollTop);
+        // if(window.pageYOffset > 10) {
+        //     console.log("yoffset");
+        //     document.querySelector("a.show-invite").classList.add("fade")
+        // }
+    })
+}
+///////////// HOVER ANIMATION /////////////
+/////////////////////
 var Fireworks = function() {
     /*=============================================================================*/
     /* Utility

@@ -2,6 +2,7 @@
 
 @section("content")
     <div class="enter">
+        <h2>New Year's Eve</h2>
         <div class="cnt">
             @guest
             <form action="{{ route('login') }}" method="POST" class="form">

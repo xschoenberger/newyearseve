@@ -1,7 +1,6 @@
 @extends("layouts.master")
 
 @section("content")
-
 	@guest
 	<form action="{{ route('login') }}" method="POST" class="form">
 		{{ csrf_field() }}
