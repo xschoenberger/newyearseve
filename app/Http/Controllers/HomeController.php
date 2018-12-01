@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\rsvpMail;
 use App\Invitations;
-use App\Mail\rsvpMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Validator;
@@ -59,7 +59,8 @@ class HomeController extends Controller
             "plus_one" => $plus_one
         ]);
 
-        $this->rsvpMail(ucfirst(auth()->user()->name), $request->rsvp, $plus_one);
+        $format_plus_one = ($plus_one == "no") ? " not" : " ";
+        rsvpMail::initialRSVP(ucfirst(auth()->user()->name), $request->rsvp, $format_plus_one);
 
         return redirect()->route("rsvp.fin")->with("success", "Nice! Thanks for the RSVP response!");
     }
@@ -75,18 +76,7 @@ class HomeController extends Controller
 
     public function rsvpUpdate(Request $request) {
         $plus_one = (!isset($request->plus_one) || $request->rsvp == "not coming") ? "no" : $request->plus_one;
-        // dd($plus_one);
         Invitations::where("user_id", auth()->id())->update(["rsvp" => $request->rsvp, "plus_one" => $plus_one]);
         return redirect()->back()->with("success", "Successfully updated your details :)");
-    }
-
-    private function rsvpMail($user, $rsvp, $plus_one)
-    {
-        $data = array("name" => $user, "rsvp" => $rsvp, "plus_one" => $plus_one);
-        Mail::send("rsvp_mail", $data, function($message) {
-             $message->to('nik.schoe@gmail.com', "New Year's Eve")->subject
-                ('New RSVP Submit!');
-        });
-        dd('Mail Send Successfully');
     }
 }
