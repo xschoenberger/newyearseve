@@ -46,7 +46,7 @@ class HomeController extends Controller
         $validator = Validator::make($request->all(), [
             "rsvp" => "required"
         ]);
-        $plus_one = (!isset($request->plus_one)) ? "no" : "yes";
+        $plus_one = (!isset($request->plus_one) || $request->rsvp == "not coming") ? "no" : "yes";
         // Validation Error
         if ($validator->fails()) {
             return redirect()->route("enter")
@@ -77,6 +77,10 @@ class HomeController extends Controller
     public function rsvpUpdate(Request $request) {
         $plus_one = (!isset($request->plus_one) || $request->rsvp == "not coming") ? "no" : $request->plus_one;
         Invitations::where("user_id", auth()->id())->update(["rsvp" => $request->rsvp, "plus_one" => $plus_one]);
+
+        $format_plus_one = ($plus_one == "no") ? " not" : " ";
+        rsvpMail::updateRSVP(ucfirst(auth()->user()->name), $request->rsvp, $format_plus_one);
+        
         return redirect()->back()->with("success", "Successfully updated your details :)");
     }
 }
