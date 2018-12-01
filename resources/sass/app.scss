@@ -641,7 +641,7 @@ h2.tap {
             box-shadow: none;
             top: 4px;
             line-height: 30px;
-            transition: color .3s ease, background-color .3s ease, top .3s ease, border-color .4s ease;
+            transition:box-shadow .2s ease, color .3s ease, background-color .3s ease, top .2s ease, border-color .4s ease;
             &:focus {
                 outline: none;
                 border-color: $botticelli;
@@ -650,6 +650,10 @@ h2.tap {
                 top: 0;
                 background-color: white;
                 color: black;
+            }
+            &:hover {
+                box-shadow: 2px 2px 40px rgba(black, .4);
+                top:0px;
             }
         }
     }

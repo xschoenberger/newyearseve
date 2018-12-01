@@ -867,8 +867,10 @@ h2.tap i {
           box-shadow: none;
   top: 4px;
   line-height: 30px;
-  -webkit-transition: color .3s ease, background-color .3s ease, top .3s ease, border-color .4s ease;
-  transition: color .3s ease, background-color .3s ease, top .3s ease, border-color .4s ease;
+  -webkit-transition: color .3s ease, background-color .3s ease, top .2s ease, border-color .4s ease, -webkit-box-shadow .2s ease;
+  transition: color .3s ease, background-color .3s ease, top .2s ease, border-color .4s ease, -webkit-box-shadow .2s ease;
+  transition: box-shadow .2s ease, color .3s ease, background-color .3s ease, top .2s ease, border-color .4s ease;
+  transition: box-shadow .2s ease, color .3s ease, background-color .3s ease, top .2s ease, border-color .4s ease, -webkit-box-shadow .2s ease;
 }
 
 .rsvp-fin div.submit button:focus {
@@ -880,6 +882,12 @@ h2.tap i {
   top: 0;
   background-color: white;
   color: black;
+}
+
+.rsvp-fin div.submit button:hover {
+  -webkit-box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.4);
+  top: 0px;
 }
 
 .rsvp-fin .info {
