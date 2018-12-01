@@ -10,8 +10,9 @@ class rsvpMail extends Controller
     public static function initialRSVP($user, $rsvp, $plus_one)
     {
         $data = array("name" => $user, "rsvp" => $rsvp, "plus_one" => $plus_one);
-        Mail::send("rsvp_admin", $data, function($message, $user) {
-             $message->to('newyearseve@ineffable.at', "Niklas")->cc("nik.schoe@icloud.com", "Steffi")->subject("RSVP submission from $user!");
+        Mail::send("rsvp_admin", $data, function($message) {
+        	$name = auth()->user()->name;
+             $message->to('newyearseve@ineffable.at', "Niklas")->cc("nik.schoe@icloud.com", "Steffi")->subject("RSVP submission from $name");
         });
         dd('Mail Send Successfully');
     }
