@@ -113,7 +113,7 @@ if (!isMobile && document.querySelector("#canvas-container")) {
         timeout = window.requestAnimationFrame(() => {
             const yValue = calcValue(y, window.innerHeight);
             const xValue = calcValue(x, window.innerWidth);
-            cards.style.transform = `rotateX(${xValue*0.6}deg) rotateY(${yValue*0.6}deg) translate(${xValue*0.5}px, ${yValue*0.5}px)`;
+            cards.style.transform = `translateX(-50%) rotateX(${xValue*0.6}deg) rotateY(${yValue*0.6}deg) translate(${xValue*0.5}px, ${yValue*0.5}px)`;
             [].forEach.call(images, (image) => {
                 image.style.marginTop = `${-xValue}px`;
                 image.style.marginLeft = `${yValue}px`;

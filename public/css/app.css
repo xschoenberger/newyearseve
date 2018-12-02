@@ -1262,7 +1262,7 @@ canvas:active {
 }
 
 .enter {
-  background-image: url("/imgs/facex.jpg");
+  background-image: url("/imgs/bg.jpg");
   background-size: cover;
   background-position: center;
   height: calc(100vh - 25vh);
@@ -1279,6 +1279,7 @@ canvas:active {
   margin-top: -100px;
   padding-bottom: 50px;
   position: relative;
+  border-bottom: 2px solid #efe9e2;
 }
 
 .enter h2 span {
@@ -1290,7 +1291,7 @@ canvas:active {
   margin: 0 auto;
   -webkit-box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.45);
           box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.45);
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
 .enter .form {

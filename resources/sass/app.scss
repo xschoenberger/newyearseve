@@ -961,7 +961,7 @@ canvas:active {
     z-index: 6;
 }
 .enter {
-    background-image: url("/imgs/facex.jpg"); // filter:blur(2px);
+    background-image: url("/imgs/bg.jpg"); // filter:blur(2px);
     background-size: cover;
     background-position: center;
     height: calc(100vh - 25vh);
@@ -976,6 +976,7 @@ canvas:active {
         margin-top: -100px;
         padding-bottom: 50px;
         position: relative;
+        border-bottom:2px solid desaturate(antiquewhite, 50%);
         & span {
             position: relative; // &:before {
             //     content: "";
@@ -1010,7 +1011,7 @@ canvas:active {
         width: 500px;
         margin: 0 auto; // background-color: rgba(white, .66);
         box-shadow: 2px 2px 50px rgba(black, .45);
-        background-color: rgba(white, .05);
+        background-color: rgba(black, .35);
     }
     & .form {
         margin: 0 auto;
