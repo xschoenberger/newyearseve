@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\rsvpMail;
 use App\Invitations;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Validator;
 
@@ -34,6 +35,7 @@ class HomeController extends Controller
     }
 
     public function enter() {
+        // dd(Hash::make("!phillipp_31.12!"));
         // auth()->logout();
         $rsvp_submitted = Invitations::where("user_id", auth()->id())->get();
         if(!empty($rsvp_submitted[0])) {
