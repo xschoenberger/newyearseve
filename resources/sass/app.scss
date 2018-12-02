@@ -495,6 +495,10 @@ h2.tap {
                     border:none;
                     letter-spacing:.25px;
                     font-size: 1rem;
+                    font-family: "Playfair Display";
+                    font-weight: 600;
+                    // border-bottom: 2px solid white;
+                    // letter-spacing: 1px;
                     &.underline {
                         text-decoration: underline;
                         // font-size: 1.6rem;
