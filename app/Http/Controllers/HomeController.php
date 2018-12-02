@@ -30,10 +30,11 @@ class HomeController extends Controller
         return view('home');
     }
     public function delRegister() {
-        // return response()->view('errors.404');
+        return response()->view('errors.404', [], 404);
     }
 
     public function enter() {
+        // auth()->logout();
         $rsvp_submitted = Invitations::where("user_id", auth()->id())->get();
         if(!empty($rsvp_submitted[0])) {
             $info = $rsvp_submitted[0];
@@ -62,10 +63,11 @@ class HomeController extends Controller
         $format_plus_one = ($plus_one == "no") ? " not" : " ";
         rsvpMail::initialRSVP(ucfirst(auth()->user()->name), $request->rsvp, $format_plus_one);
 
-        return redirect()->route("rsvp.fin")->with("success", "Nice! Thanks for the RSVP response!");
+        return redirect()->route("rsvp.fin")->with("success", "Nice! Thanks for the RSVP!");
     }
 
     public function rsvpFin() {
+        // auth()->logout();
         $info = Invitations::where("user_id", auth()->id())->get();
         if(empty($info[0])) {
             return redirect()->route("enter");

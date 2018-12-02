@@ -10,6 +10,6 @@ class Invitations extends Model
     protected $fillable = ["user_id", "rsvp", "plus_one", "invitation"];
 
     public function user() {
-    	$this->belongsTo(User::class);
+    	return $this->belongsTo(User::class);
     }
 }

@@ -17,10 +17,11 @@ Route::get("/fin", ['uses' => 'HomeController@rsvpFin', 'as' => 'rsvp.fin']);
 Route::post("/fin", ['uses' => 'HomeController@rsvpUpdate', 'as' => 'rsvp.update']);
 // Route::post("/", ['uses' => 'AuthController@authEnter', 'as' => 'authEnter']);
 
+Route::get("/cp", ['uses' => 'AdminController@cp', 'as' => 'admin.cp']);
 
 Auth::routes();
 
+Route::get("/logout", ['uses' => 'AuthController@logout', 'as' => 'logout']);
 
-// Route::get("/register", ['uses' => 'HomeController@delRegister', 'as' => 'del.register']);
+Route::get("/register", ['uses' => 'HomeController@delRegister', 'as' => 'del.register']);
 
-Route::get('/home', 'HomeController@index')->name('home');

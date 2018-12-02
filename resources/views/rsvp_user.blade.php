@@ -151,7 +151,7 @@
 											<table width="375" border="0" cellpadding="0" cellspacing="0" align="right" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">
 												<tbody><tr>
 													<td width="100%" style="font-size: 26px; color: #4e4e4e; font-family: Poppins, Arial, sans-serif, 'Poppins'; line-height: 32px; vertical-align: top; font-weight: 600;">
-														New <em style="font-family: Playfair Display !important; font-style: normal;font-weight:600;">RSVP</em> submission!
+														<em style="font-family: Playfair Display !important; font-style: normal;font-weight:600;">RSVP</em> update!
 													</td>
 												</tr>
 												<tr>
@@ -161,7 +161,7 @@
 													<td width="100%" style="font-size: 14px; color: #8d9499; text-align: left; font-family: Poppins, Arial, sans-serif, 'Poppins'; line-height: 26px; vertical-align: top; font-weight: 400;" class="fullCenter">
 														<style type="text/css">
 														p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Poppins Neue'; color: #262626}
-														p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Poppins Neue'; color: #262626; min-height: 16.0px}</style><p class="p1"><b>{{ $name }}</b> <em style="color: #8BAEB2;">submitted</em> the first RSVP!</p><p class="p2"><br></p><p class="p2">{{ $name }} <em style="color: #8BAEB2">is {{ $rsvp }}</em> and is<em style="color:#8BAEB2;">{{ $plus_one }} bringing</em> a plus one!</p>
+														p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Poppins Neue'; color: #262626; min-height: 16.0px}</style><p class="p1"><b>{{ $name }}</b> <em style="color: #8BAEB2;">updated</em> the RSVP!</p><p class="p2"><br></p><p class="p2">{{ $name }} changed the status to<em style="color: #8BAEB2;font-weight:600;"> {{ $rsvp }}</em>@if($rsvp == "coming") and <em style="color:#8BAEB2;font-weight:600;">{{ $plus_one }} bringing</em> a plus one! @else.@endif</p>
 													</td>
 												</tr>
 												<tr>
@@ -234,8 +234,8 @@
 								</tbody></table>
 								<table width="100%" border="0" cellpadding="0" cellspacing="0" align="left" style="text-align: center;" class="fullCenter">
 									<tbody><tr>
-										<td width="100%" style="text-align: center; font-family: Poppins, Arial, sans-serif, 'Poppins'; font-size: 13px; color: #bfbfbf; line-height: 26px; font-weight: 400;" class="fullCenter">
-											<strong><em><span style="font-size:16px;"><span style="font-family:Playfair Display !important; color:#3E484A;">schoenberger's</span></span></em></strong> • Leopold-Ernst-Gasse 40, Apt. 27 • 1170 Vienna, Austria<br>+43 676 51 05 269 • <a  target="_blank" href="https://newyearseve.ineffable.at" style="text-decoration: none; color: #bfbfbf;"><em><strong style="color: #bfbfbf;"><span style="font-size: 16px; color: #bfbfbf;"><span style="font-family:Playfair Display !important; color:#3E484A;">newyearseve.ineffable.at</span></span></strong></em></a>
+										<td width="100%" style="text-align: center; font-family: Poppins, Arial, sans-serif, 'Poppins'; font-size: 13px; color: #797A77; line-height: 26px; font-weight: 400;" class="fullCenter">
+											<strong><em><span style="font-size:16px;"><span style="font-family:Playfair Display !important; color:#3E484A;">schoenberger's</span></span></em></strong> • <a style="font-weight:500;border-bottom:1px solid #797A77" href="https://goo.gl/maps/Edokw975bjz" target="_blank">Leopold-Ernst-Gasse 40, Apt. 27 • 1170 Vienna, Austria</a><br><a href="tel:+436765105269" style="border-bottom:1px solid #797A77; font-weight:500;">+43 676 51 05 269</a> • <a  target="_blank" href="https://newyearseve.ineffable.at" style="text-decoration: none; color: #bfbfbf;"><em><strong style="color: #797A77;"><span style="font-size: 16px; color: #bfbfbf;"><span style="font-family:Playfair Display !important; color:#3E484A;border-bottom:1px solid #171717;">newyearseve.ineffable.at</span></span></strong></em></a>
 										</td>
 									</tr>
 								</tbody></table>

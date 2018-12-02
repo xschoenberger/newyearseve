@@ -14,8 +14,10 @@
         @yield("content")
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/CSSPlugin.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-        <script src="https://jackrugile.com/lab/fireworks-v2/js/dat.gui.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        @if(Route::has("enter"))
+            <script src="https://jackrugile.com/lab/fireworks-v2/js/dat.gui.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        @endif
         <script src="/js/app.js"></script>
     </body>
 </html>

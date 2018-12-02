@@ -31,6 +31,6 @@ class AuthController extends Controller
     public function logout()
     {
         auth()->logout();
-        return redirect()->route('/')->with('check', 'Successfully logged out! Bye!');
+        return redirect()->route('enter')->with('check', 'Successfully logged out! Bye!');
     }
 }

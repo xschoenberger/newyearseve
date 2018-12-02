@@ -2,7 +2,11 @@
 
 @section("content")
     <div class="enter">
-        <h2>New Year's Eve</h2>
+        {{-- <img class="intro-hxyds" width="100px" src="/imgs/me_hxyd.png" alt=""> --}}
+        {{-- <img class="intro-hxyds"" width="100px" src="/imgs/face.png" alt=""> --}}
+        <h2>
+            <span><i>schoenberger's</i></span>
+        </h2>
         <div class="cnt">
             @guest
             <form action="{{ route('login') }}" method="POST" class="form">
