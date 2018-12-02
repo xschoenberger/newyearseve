@@ -6,6 +6,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>N.Y.E @ schoenberger's</title>
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta name="description" content="New Year's Eve at schoenberger's. Celebrating New Year's Eve and our new apartment. Come as you are.">
+        <meta property="og:title" content="New Year's at schoenberger's">
+        <meta property="og:url" content="https://newyearseve.ineffable.at"/>
+        <meta property="og:description" content="New Year's Eve at schoenberger's. Celebrating New Year's Eve and our new apartment. Come as you are.">
+        <meta property="og:image" content="{{ asset("imgs/NYE_logo_hxyds.png") }}">
         <link rel="stylesheet" href="/css/app.css">
         <link rel="icon" href="/imgs/icons/fireworks.png">
     </head>
