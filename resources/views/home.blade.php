@@ -54,7 +54,7 @@
 				<div class="form--submit">
 					<button class="btn" type="submit">Submit RSVP</button>
 					<span class="rsvp-msg"></span>
-					<span class="info">Please tell us if you're coming or not :)<br>(YES = down to clown; NO = not clownin')</span>
+					<span class="info">Please let us know if you're coming or not :)<br>(YES = down to clown; NO = not clownin')</span>
 				</div>
 			</form>
 		</div>
