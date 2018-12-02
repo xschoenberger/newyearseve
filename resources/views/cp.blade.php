@@ -2,6 +2,7 @@
 @section("content")
 <section class="rsvp-fin cp">
 	{{-- @include("partials.svgeez") --}}
+	<a class="breadcrumb" href="{{ route("rsvp.fin") }}">back to rsvp details</a>
 	<div class="cp--guest_list">
 		<h2>Guest list</h2>
 		<h3>View all <em>RSVP's</em> and their status.</h3>

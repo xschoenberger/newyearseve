@@ -127,6 +127,7 @@ h2.tap i {
 
 .alert {
   position: fixed;
+  z-index: 101;
   left: 0;
   top: 0;
   width: 100%;
@@ -158,19 +159,15 @@ h2.tap i {
 
 .alert .exit {
   position: absolute;
-  right: 30px;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  background-color: black;
   letter-spacing: 2px;
-  opacity: .66;
+  bottom: -25px;
   color: white;
   padding: 6px;
   cursor: pointer;
-}
-
-@media (max-width: 600px) {
-  .alert .exit {
-    right: 0;
-    bottom: -3px;
-  }
 }
 
 .svgee {
@@ -399,7 +396,7 @@ h2.tap i {
 
 @media (max-width: 600px) {
   .show-invite {
-    width: calc(100% - 6px);
+    width: calc(90% - 6px);
     text-align: center;
   }
 }
@@ -643,12 +640,12 @@ h2.tap i {
   display: inline-block;
 }
 
-.invitation--body h3 .sm .sm-break {
+.invitation--body h3 .sm .s-break {
   display: none;
 }
 
 @media (max-width: 600px) {
-  .invitation--body h3 .sm .sm-break {
+  .invitation--body h3 .sm .s-break {
     display: block;
   }
 
@@ -982,6 +979,7 @@ h2.tap i {
   font-size: 3rem;
   -webkit-transform: translateX(-50px);
           transform: translateX(-50px);
+  position: relative;
 }
 
 .rsvp-fin h2:before {
@@ -995,6 +993,21 @@ h2.tap i {
   background-color: #8BAEB2;
   z-index: -1;
   opacity: .33;
+}
+
+.rsvp-fin h2 a {
+  font-size: 1.3rem;
+  right: -106px;
+  position: absolute;
+  bottom: 10px;
+}
+
+@media (max-width: 674px) {
+  .rsvp-fin h2 a {
+    bottom: 6px;
+    right: -78px;
+    font-size: 1.1rem;
+  }
 }
 
 .rsvp-fin div.submit {
@@ -1225,6 +1238,14 @@ h2.tap i {
     left: -6px;
   }
 
+  .rsvp-fin h2 a {
+    right: -46px;
+  }
+
+  .rsvp-fin .info {
+    font-style: .9rem;
+  }
+
   .rsvp-fin .info label.switch {
     font-size: .9rem;
     padding: 2px;
@@ -1266,7 +1287,7 @@ canvas:active {
   background-size: cover;
   background-position: center;
   height: calc(100vh - 25vh);
-  padding-top: 25vh;
+  padding-top: 15vh;
 }
 
 .enter h2 {
@@ -1277,9 +1298,19 @@ canvas:active {
   color: white;
   position: relative;
   margin-top: -100px;
-  padding-bottom: 50px;
   position: relative;
-  border-bottom: 2px solid #efe9e2;
+}
+
+.enter h2 img {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+  width: 300px;
+}
+
+@media (max-width: 600px) {
+  .enter h2 img {
+    width: 200px;
+  }
 }
 
 .enter h2 span {
@@ -1402,6 +1433,40 @@ canvas:active {
   background-color: black;
 }
 
+@media (max-width: 800px) {
+  .enter h2 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .enter .cnt {
+    width: 85%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .enter .cnt .form--group {
+    padding-top: 48px;
+    width: 75%;
+  }
+
+  .enter .cnt .form--group input {
+    border: 2px solid white;
+  }
+
+  .enter .cnt .form--group input:focus ~ label {
+    top: 21px;
+  }
+
+  .enter .cnt .form--group input:not(:placeholder-shown) ~ label {
+    top: 21px;
+  }
+
+  .enter .cnt .form--group label {
+    top: 60px;
+  }
+}
+
 .cp {
   max-width: unset;
   width: calc(100% - 112px);
@@ -1414,6 +1479,13 @@ canvas:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.cp .breadcrumb {
+  position: absolute;
+  left: 18px;
+  top: 21px;
+  font-size: 1rem;
 }
 
 @media (max-width: 1200px) {
@@ -1559,6 +1631,7 @@ canvas:active {
 
   .cp .rsvps--cnt:not(.rsvps--head) {
     display: block;
+    margin-bottom: 2em;
   }
 
   .cp .rsvps--cnt:not(.rsvps--head) h4 {
@@ -1623,6 +1696,11 @@ canvas:active {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    width: calc(100% - 96px);
+  }
+
+  .cp--guest_list h2:before {
+    width: calc(100% + 37px);
   }
 
   .cp--stats {
@@ -1635,7 +1713,7 @@ canvas:active {
   }
 
   .cp--stats h2:before {
-    width: calc(100% + 30px);
+    width: calc(100% + 37px);
   }
 }
 

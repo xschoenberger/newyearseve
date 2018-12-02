@@ -103,6 +103,7 @@ h2.tap {
 /// alert
 .alert {
     position: fixed;
+    z-index: 101;
     left: 0;
     top: 0;
     width: 100%;
@@ -122,16 +123,14 @@ h2.tap {
     }
     & .exit {
         position: absolute;
-        right: 30px;
+        right: 50%;
+        transform: translateX(50%);
+        background-color: black;
         letter-spacing: 2px;
-        opacity: .66;
+        bottom: -25px;
         color: white;
         padding: 6px;
         cursor: pointer;
-        @media (max-width: 600px) {
-            right:0;
-            bottom: -3px;
-        }
     }
 }
 .svgee {
@@ -268,7 +267,7 @@ h2.tap {
     &.active {
         top: 5%;
         background-color: rgba(black, .88);
-        padding:3px;
+        padding: 3px;
     }
     &.fade {
         opacity: .2;
@@ -277,7 +276,7 @@ h2.tap {
         top: 26%;
     }
     @media (max-width: 600px) {
-        width: calc(100% - 6px);
+        width: calc(90% - 6px);
         text-align: center;
     }
 }
@@ -320,7 +319,7 @@ h2.tap {
         height: 88%;
     }
     @media (max-width: 500px) {
-        min-width: 90%; 
+        min-width: 90%;
         &.active {
             border: 1px solid;
         }
@@ -337,9 +336,9 @@ h2.tap {
         opacity: 0;
         margin-top: 3em;
         top: 35%;
-        left:50%;
-        transform:translateX(-50%);
-        width:100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
         text-align: center;
         position: absolute;
         transition: opacity .4s ease;
@@ -460,11 +459,11 @@ h2.tap {
                 .s-break-opposite {
                     display: inline-block;
                 }
-                .sm-break {
+                .s-break {
                     display: none;
                 }
                 @media (max-width: 600px) {
-                    .sm-break {
+                    .s-break {
                         display: block;
                     }
                     .s-break-opposite {
@@ -721,6 +720,7 @@ h2.tap {
     h2 {
         font-size: 3rem;
         transform: translateX(-50px);
+        position: relative;
         &:before {
             content: "";
             display: block;
@@ -732,6 +732,17 @@ h2.tap {
             background-color: $botticelli;
             z-index: -1;
             opacity: .33;
+        }
+        a {
+            font-size: 1.3rem;
+            right: -106px;
+            position: absolute;
+            bottom: 10px;
+            @media (max-width: 674px) {
+                bottom:6px;
+                right: -78px;
+                font-size: 1.1rem;
+            }
         }
     }
     div.submit {
@@ -925,8 +936,12 @@ h2.tap {
                 width: calc(100% + (20px + 26px + 6px));
                 left: -6px;
             }
+            a {
+                right: -46px;
+            }
         }
         .info {
+            font-style: .9rem;
             label.switch {
                 font-size: .9rem;
                 padding: 2px;
@@ -965,7 +980,7 @@ canvas:active {
     background-size: cover;
     background-position: center;
     height: calc(100vh - 25vh);
-    padding-top: 25vh;
+    padding-top: 15vh;
     h2 {
         text-align: center;
         font-size: 4rem;
@@ -974,9 +989,16 @@ canvas:active {
         color: white;
         position: relative;
         margin-top: -100px;
-        padding-bottom: 50px;
+        // padding-bottom: 50px;
         position: relative;
-        border-bottom:2px solid desaturate(antiquewhite, 50%);
+        // border-bottom: 2px solid desaturate(antiquewhite, 50%);
+        img {
+            transform:translateX(-10px);
+            width:300px;
+            @media (max-width: 600px) {
+                width:200px;
+            }
+        }
         & span {
             position: relative; // &:before {
             //     content: "";
@@ -1090,6 +1112,35 @@ canvas:active {
             }
         }
     }
+    @media (max-width: 800px) {
+        h2 {
+            font-size: 2.8rem;
+        }
+    }
+    @media (max-width: 600px) {
+        .cnt {
+            width: 85%;
+            border: 1px solid rgba(white, .5); // background-color: rgba(#797A77, .96);
+            & .form {
+                &--group {
+                    padding-top: 48px;
+                    width: 75%;
+                    input {
+                        border: 2px solid white;
+                        &:focus~label {
+                            top: 21px;
+                        }
+                        &:not(:placeholder-shown)~label {
+                            top: 21px;
+                        }
+                    }
+                    & label {
+                        top: 60px;
+                    }
+                }
+            }
+        }
+    }
 }
 .cp {
     max-width: unset;
@@ -1102,6 +1153,12 @@ canvas:active {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    & .breadcrumb {
+        position: absolute;
+        left: 18px;
+        top: 21px;
+        font-size: 1rem;
+    }
     @media (max-width: 1200px) {
         font-size: 1rem;
     }
@@ -1211,6 +1268,7 @@ canvas:active {
             }
             &--cnt:not(.rsvps--head) {
                 display: block;
+                margin-bottom: 2em;
                 & h4 {
                     display: block;
                     font-weight: 600;
@@ -1264,12 +1322,20 @@ canvas:active {
     }
     @media (max-width:860px) {
         flex-direction: column-reverse;
+        width: calc(100% - 96px);
+        &--guest_list {
+            h2 {
+                &:before {
+                    width: calc(100% + 37px);
+                }
+            }
+        }
         &--stats {
             margin-left: 0;
             h2 {
                 transform: translateX(-30px);
                 &:before {
-                    width: calc(100% + 30px);
+                    width: calc(100% + 37px);
                 }
             }
         }

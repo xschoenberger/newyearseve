@@ -5,7 +5,7 @@
         {{-- <img class="intro-hxyds" width="100px" src="/imgs/me_hxyd.png" alt=""> --}}
         {{-- <img class="intro-hxyds"" width="100px" src="/imgs/face.png" alt=""> --}}
         <h2>
-            <span><i>schoenberger's</i></span>
+            <img width="200px" src="{{ asset("imgs/schoenbergersx.png") }}" alt="schoenberger's logo">
         </h2>
         <div class="cnt">
             @guest
@@ -13,7 +13,7 @@
                 {{ csrf_field() }}
                 @method("POST")
                 <div class="form--group">
-                    <input placeholder="name" type="text" id="name" name="name">
+                    <input placeholder="name" type="text" id="name" name="name" value="{{ old("name") }}">
                     <label for="name">Name</label>
                 </div>
                 <div class="form--group">

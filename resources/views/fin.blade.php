@@ -13,7 +13,7 @@
 		</div>
 	</div>
 	@include("partials.svgeez")
-	<h2>Hi {{ Auth::user()->name }}!</h2>
+	<h2>Hi {{ Auth::user()->name }}! <a href="{{ route("admin.cp") }}">go to admin view.</a></h2>
 	<h3>Your <em>RSVP</em> details:</h3>
 	<form action="{{ route("rsvp.update") }}" method="POST" class="form rsvp-update">
 		@csrf

@@ -22,6 +22,7 @@
         </div>
     @else
         <div class="alert alert-danger">
+            <div class="exit">close</div>
             {{ $errors->first() }}
         </div>
     @endif

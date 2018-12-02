@@ -66,20 +66,22 @@ if (document.querySelector("#canvas-container")) {
         return true
     })
 }
-document.querySelector(".show-invite").addEventListener("click", e => {
-    e.preventDefault();
-    document.querySelector(".invitation").classList.toggle("active")
-    if(document.querySelector(".invitation--head")) {
-        document.querySelector(".invitation--head").classList.toggle("hide")
-    }
-    document.querySelector(".invitation--body").classList.toggle("active")
-    e.target.classList.toggle("active")
-    if (e.target.innerHTML.indexOf("hide") !== -1) {
-        e.target.innerHTML = "show details"
-    } else {
-        e.target.innerHTML = "hide details"
-    }
-})
+if(document.querySelector(".show-invite")) {
+    document.querySelector(".show-invite").addEventListener("click", e => {
+        e.preventDefault();
+        document.querySelector(".invitation").classList.toggle("active")
+        if(document.querySelector(".invitation--head")) {
+            document.querySelector(".invitation--head").classList.toggle("hide")
+        }
+        document.querySelector(".invitation--body").classList.toggle("active")
+        e.target.classList.toggle("active")
+        if (e.target.innerHTML.indexOf("hide") !== -1) {
+            e.target.innerHTML = "show details"
+        } else {
+            e.target.innerHTML = "hide details"
+        }
+    })
+}
 if (document.querySelector(".alert")) {
     document.querySelector(".alert").addEventListener("click", ev => {
         ev.target.parentElement.classList.add("rm")
