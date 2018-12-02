@@ -1197,7 +1197,7 @@ h2.tap i {
 
   .rsvp-fin .show-invite {
     top: 9%;
-    width: calc(90% - 7px);
+    width: calc(90% - 8px);
     text-align: center;
   }
 
