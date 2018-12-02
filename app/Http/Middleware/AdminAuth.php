@@ -2,16 +2,16 @@
 
 namespace App\Http\Middleware;
 
+use Auth;
 use Closure;
 use Illuminate\Auth\AuthenticationException;
-use Auth;
 
 class AdminAuth
 {
     public function handle($request, Closure $next)
     { 
-        if(auth()->user()->u_group !== 1) {
-            return redirect()->route("enter")->with("info", "Please login!");
+        if(Auth::guest() || auth()->user()->u_group !== 1) {
+            return redirect()->route("enter")->with("warning", "Please login!");
         }
         return $next($request);
     }
