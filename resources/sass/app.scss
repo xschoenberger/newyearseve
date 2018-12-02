@@ -455,7 +455,7 @@ h2.tap {
                     font-size: .9rem;
                 }
                 a {
-                    font-weight: 700;
+                    font-weight: 500;
                 }
                 .s-break-opposite {
                     display: inline-block;
@@ -482,6 +482,25 @@ h2.tap {
             max-width: 550px;
             @media (max-width: 700px) {
                 margin-top: 35px;
+            }
+            &.invite {
+                line-height: 1.5;
+                strong {
+                    display: block;
+                    font-size: 1rem;
+                }
+                em {
+                    text-transform: lowercase;
+                    font-style: italic;
+                    border:none;
+                    letter-spacing:.25px;
+                    font-size: 1rem;
+                    &.underline {
+                        text-decoration: underline;
+                        // font-size: 1.6rem;
+                        letter-spacing: 1px;
+                    }
+                }
             }
         }
         & .form {

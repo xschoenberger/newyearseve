@@ -5,10 +5,16 @@
 	<div class="invitation">
 		<div class="invitation--body">
 			<h3><span class="h">When:</span> <time class="sm" datetime="2018-12-31 19:00">31.12.2018; <br>19:00 - <i>open end</i></time></h3>
-			<h3><span class="h">Where:</span> <span class="sm"><a target="_blank" href="https://goo.gl/maps/Edokw975bjz">Leopold-Ernst-Gasse 40 / Apt. 27, 4th Floor</a></span></h3>
+			<h3><span class="h">Where:</span> <span class="sm"><a target="_blank" href="https://goo.gl/maps/Edokw975bjz">Leopold-Ernst-Gasse 40 <i class="s-break-opposite">/</i> <br class="s-break">4th Floor, Apt. 27</a></span></h3>
 			{{-- <h3>Google Cal. Event: <span class="sm"><a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=Mmx0NWY0ZzVqM2plbWJqa2M1bzEzczVidG0gbmlrLnNjaG9lQG0&amp;tmsrc=nik.schoe%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif">Event</a></h3> --}}
-			<p class="sm">
-				Ea freegan excepteur, hashtag typewriter vexillologist wolf leggings celiac venmo occupy adaptogen swag in nostrud. Organic shaman poutine, street art chia knausgaard four dollar toast. Synth bitters blue bottle raclette you probably haven't heard of them occupy. Eiusmod whatever tousled jianbing, narwhal cray edison bulb cupidatat hell of thundercats.
+			<p class="sm invite">
+				<strong>We hereby cordially invite you</strong> 
+				..to the <em>schoenberger’s</em> New Year’s Eve/housewarming party.
+				In mid December we will have finished moving in. On the 31st of December we want to celebrate this with you.
+				<br>Come as you are - in your fanciest outfit, sweatpants & hoodie or half naked. As long as you are FEELIN YO’SELF we don’t care what you wear.<br><br>
+				See you soon,<br>
+				Niklas <em>&</em> Stefanie <br>
+				<em class="underline">schoenberger</em>
 			</p>
 		</div>
 	</div>

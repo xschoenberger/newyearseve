@@ -634,7 +634,7 @@ h2.tap i {
 }
 
 .invitation--body h3 .sm a {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .invitation--body h3 .sm .s-break-opposite {
@@ -668,6 +668,28 @@ h2.tap i {
   .invitation--body p.sm {
     margin-top: 35px;
   }
+}
+
+.invitation--body p.sm.invite {
+  line-height: 1.5;
+}
+
+.invitation--body p.sm.invite strong {
+  display: block;
+  font-size: 1rem;
+}
+
+.invitation--body p.sm.invite em {
+  text-transform: lowercase;
+  font-style: italic;
+  border: none;
+  letter-spacing: .25px;
+  font-size: 1rem;
+}
+
+.invitation--body p.sm.invite em.underline {
+  text-decoration: underline;
+  letter-spacing: 1px;
 }
 
 .invitation--body .form {
