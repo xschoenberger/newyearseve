@@ -15,7 +15,7 @@ class AdminController extends Controller
     public function cp() {
     	$guests = Invitations::all();
     	// Create empty guest list array
-    	$guest_list = [];
+    	$guest_list = ["rsvp" => [], "plus_one" => []];
     	// Create 2 subarrays. --
     	// --> "rsvp" for the people who are coming && "plus_one" for people who will bring someone
     	// -- Push every guest into both subarrays with the value of either rsvp or plus_one -->
@@ -31,6 +31,7 @@ class AdminController extends Controller
 			    unset($guest_list["plus_one"][$key]);
 			}
     	}
+
     	return view("cp", compact("guests", "guest_list"));
     }
 }

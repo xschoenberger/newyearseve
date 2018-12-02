@@ -16,7 +16,7 @@
 			<div class="rsvps--cnt">
 				<h4>{{ $guest->user->name }}</h4>
 				<p class="@if($guest->rsvp == "coming")yes @else no @endif"><em>{{ $guest->rsvp }}<span class="icon"></span></em></p>
-				<p class="@if($guest->plus_one == "yes")yes @else no @endif"><em>{{ $guest->plus_one }}<span class="icon"></span></em></p>
+				<p class="@if($guest->plus_one == "yes")yes @else no @endif"><em><span class="plus_one-info">Plus One?</span> {{ $guest->plus_one }}<span class="icon"></span></em></p>
 			</div>
 			@endforeach
 		</div>
