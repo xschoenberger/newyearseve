@@ -112,6 +112,7 @@ h2.tap {
     justify-content: center;
     align-items: center;
     color: antiquewhite;
+    padding: 3px 12px;
     font-weight: 600;
     background-color: black;
     box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.4);
@@ -903,7 +904,7 @@ h2.tap {
         }
         .show-invite {
             top: 9%;
-            width: calc(90% - 7px);
+            width: calc(90% - 8px);
             text-align: center;
         }
         div.submit {

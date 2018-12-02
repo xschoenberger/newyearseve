@@ -142,6 +142,7 @@ h2.tap i {
       -ms-flex-align: center;
           align-items: center;
   color: antiquewhite;
+  padding: 3px 12px;
   font-weight: 600;
   background-color: black;
   -webkit-box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.4);
