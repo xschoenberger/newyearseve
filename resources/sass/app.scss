@@ -902,8 +902,8 @@ h2.tap {
             font-size: 1.4rem;
         }
         .show-invite {
-            top: 11%;
-            width: 100%;
+            top: 9%;
+            width: calc(90% - 7px);
             text-align: center;
         }
         div.submit {
