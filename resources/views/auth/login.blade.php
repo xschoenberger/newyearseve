@@ -5,7 +5,7 @@
         {{-- <img class="intro-hxyds" width="100px" src="/imgs/me_hxyd.png" alt=""> --}}
         {{-- <img class="intro-hxyds"" width="100px" src="/imgs/face.png" alt=""> --}}
         <h2>
-            <img width="200px" src="{{ asset("imgs/schoenbergersx.png") }}" alt="schoenbergers' logo">
+            <img width="200px" src="{{ asset("imgs/1x/schoenbergersx.png") }}" alt="schoenbergers' logo">
         </h2>
         <div class="cnt">
             @guest
