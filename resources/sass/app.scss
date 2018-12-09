@@ -898,15 +898,26 @@ h2.tap {
         margin-top: 70px;
         text-align: center;
         p {
+            position: relative;
             font-size: 1.2rem;
+            strong {
+                position: relative;
+            }
             a {
                 position: relative;
-                img {
-                    left: -26px;
-                    top: 3px;
-                    width: 20px;
-                    position: absolute;
+                margin-top: 4px;
+                display: inline-block;
+                text-decoration: none;
+                border-bottom:none;
+                &:nth-of-type(2) {
+                    text-transform: none;
                 }
+            }
+            img {
+                left: -26px;
+                top: 3px;
+                width: 20px;
+                position: absolute;
             }
         }
     }
